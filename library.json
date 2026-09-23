@@ -40,5 +40,133 @@
       "include": false,
       "notes": ""
     }
+  },
+  "zhang2025systematic": {
+    "bib": {
+      "publisher": "ACM New York, NY",
+      "year": "2025",
+      "pages": "1--41",
+      "number": "11",
+      "volume": "57",
+      "journal": "ACM Computing Surveys",
+      "author": "Zhang, Haopeng and Yu, Philip S and Zhang, Jiawei",
+      "title": "A systematic survey of text summarization: From statistical methods to large language models",
+      "ENTRYTYPE": "article",
+      "ID": "zhang2025systematic"
+    },
+    "user": {
+      "include": false,
+      "notes": ""
+    }
+  },
+  "7ad874814fa24e1a96c089839baf6d23": {
+    "bib": {
+      "address": "Netherlands",
+      "publisher": "Politie en Wetenschap",
+      "volume": "79",
+      "isbn": "978-9035247963",
+      "language": "Dutch",
+      "month": "January",
+      "year": "2015",
+      "author": "M. Malsch and Robin Kranendonk and \\{de Keijser\\}, Jan and Henk Elffers and Martha Komter and \\{de Boer\\}, Meike",
+      "title": "Kijken, luisteren, lezen: De invloed van beeld, geluid en schrift op het oordeel over verdachtenverhoren",
+      "ENTRYTYPE": "book",
+      "ID": "7ad874814fa24e1a96c089839baf6d23"
+    },
+    "user": {
+      "include": false,
+      "notes": ""
+    }
+  },
+  "ding2025citations": {
+    "bib": {
+      "doi": "10.1609/aaai.v39i22.34550",
+      "year": "2025",
+      "pages": "23787--23795",
+      "number": "22",
+      "volume": "39",
+      "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "title": "Citations and Trust in LLM Generated Responses",
+      "author": "Ding, Y. and Facciani, M. and Joyce, E. and Poudel, A. and Bhattacharya, S. and Veeramani, B. and others and Weninger, T.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "ding2025citations"
+    },
+    "user": {
+      "include": false,
+      "notes": ""
+    }
+  },
+  "schroeder2025trustllmjudgmentsreliability": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2412.12509",
+      "primaryclass": "cs.CL",
+      "archiveprefix": "arXiv",
+      "eprint": "2412.12509",
+      "year": "2025",
+      "author": "Kayla Schroeder and Zach Wood-Doughty",
+      "title": "Can You Trust LLM Judgments? Reliability of LLM-as-a-Judge",
+      "ENTRYTYPE": "misc",
+      "ID": "schroeder2025trustllmjudgmentsreliability"
+    },
+    "user": {
+      "include": false,
+      "notes": "Niet direct useful, maar LLM-as-a-judge is misschien wel handig als deel van de pipeline, of als evaluatie van een systeem\n"
+    }
+  },
+  "goh2026realtimetrustworthinessscoringllm": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2603.18014",
+      "primaryclass": "cs.CL",
+      "archiveprefix": "arXiv",
+      "eprint": "2603.18014",
+      "year": "2026",
+      "author": "Hui Wen Goh and Jonas Mueller",
+      "title": "Real-Time Trustworthiness Scoring for LLM Structured Outputs and Data Extraction",
+      "ENTRYTYPE": "misc",
+      "ID": "goh2026realtimetrustworthinessscoringllm"
+    },
+    "user": {
+      "include": false,
+      "notes": "Sounds too good to be true uit de abstract "
+    }
+  },
+  "10.1007/978-3-032-08333-3_6": {
+    "bib": {
+      "isbn": "978-3-032-08333-3",
+      "abstract": "Artificial Intelligence (AI) is rapidly embedded in critical decision-making systems, however their foundational ``black-box'' models require eXplainable AI (XAI) solutions to enhance transparency, which are mostly oriented to experts, making no sense to non-experts. Alarming evidence about AI's unprecedented human values risks brings forward the imperative need for transparent human-centered XAI solutions. In this work, we introduce a domain-, model-, explanation-agnostic, generalizable and reproducible framework that ensures both transparency and human-centered explanations tailored to the needs of both experts and non-experts. The framework leverages Large Language Models (LLMs) and employs in-context learning to convey domain- and explainability-relevant contextual knowledge into LLMs. Through its structured prompt and system setting, our framework encapsulates in one response explanations understandable by non-experts and technical information to experts, all grounded in domain and explainability principles. To demonstrate the effectiveness of our framework, we establish a ground-truth contextual ``thesaurus'' through a rigorous benchmarking with over 40 data, model, and XAI combinations for an explainable clustering analysis of a well-being scenario. Through a comprehensive quality and human-friendliness evaluation of our framework's explanations, we prove high content quality through strong correlations with ground-truth explanations (Spearman rank correlation = 0.92) and improved interpretability and human-friendliness to non-experts through a user study (N = 56). Our overall evaluation confirms trust in LLMs as HCXAI enablers, as our framework bridges the above Gaps by delivering (i) high-quality technical explanations aligned with foundational XAI methods and (ii) clear, efficient, and interpretable human-centered explanations for non-experts.",
+      "pages": "113--137",
+      "address": "Cham",
+      "publisher": "Springer Nature Switzerland",
+      "year": "2026",
+      "booktitle": "Explainable Artificial Intelligence",
+      "title": "Mind the XAI Gap: A Human-Centered LLM Framework for Democratizing Explainable AI",
+      "editor": "Guidotti, Riccardo\nand Schmid, Ute\nand Longo, Luca",
+      "author": "Paraschou, Eva\nand Arapakis, Ioannis\nand Yfantidou, Sofia\nand Macaluso, Sebastian\nand Vakali, Athena",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1007/978-3-032-08333-3_6"
+    },
+    "user": {
+      "include": false,
+      "notes": "Might be irrelevant, as it talks more about explaining WITH llms than it does explaining them itself"
+    }
+  },
+  "Liao2024AI": {
+    "bib": {
+      "volume": " ",
+      "title": "AI Transparency in the Age of LLMs: A Human-Centered Research Roadmap",
+      "publisher": "The MIT Press",
+      "note": "https://hdsr.mitpress.mit.edu/pub/aelql9qy",
+      "month": "may 31",
+      "year": "2024",
+      "number": "Special Issue 5",
+      "journal": "Harvard Data Science Review",
+      "author": "Liao, Q. Vera and Wortman Vaughan, Jennifer",
+      "ENTRYTYPE": "article",
+      "ID": "Liao2024AI"
+    },
+    "user": {
+      "include": false,
+      "notes": ""
+    }
   }
 }
