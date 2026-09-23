@@ -7,9 +7,6 @@ __pycache__/
 build/
 *.spec
 
-# App data
-library.json
-
 # IDE / OS
 .idea/
 .vscode/
