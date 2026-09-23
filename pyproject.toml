@@ -1,0 +1,20 @@
+[project]
+name = "bibtexmanager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luka de Vrij", email = "35869162+devLukaDev@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "bibtexparser<2",
+    "pyside6>=6.11.2",
+]
+
+[project.scripts]
+bibtexmanager = "bibtexmanager:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"

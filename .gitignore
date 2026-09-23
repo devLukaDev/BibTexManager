@@ -1,0 +1,17 @@
+# uv / Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# App data
+library.json
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
