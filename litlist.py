@@ -4,6 +4,8 @@ import json
 import sys
 from pathlib import Path
 
+from PySide6.QtCore import QSettings, Qt
+from PySide6.QtGui import QAction
 import bibtexparser
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
@@ -12,6 +14,7 @@ from PySide6.QtWidgets import (
     QScrollArea, QSplitter, QVBoxLayout, QWidget,
 )
 
+DEFAULT_DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH.parent.mkdir(exist_ok=True)
 USER_DEFAULTS = {"include": False, "notes": ""}  # add your own fields here
@@ -26,7 +29,11 @@ def label(bib):
 class Main(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Literature")
+        self.settings = QSettings("litlist", "litlist")
+        self.db_path = Path(self.settings.value(
+            "db_path", str(DEFAULT_DB_PATH)))
+        self.db = self.load()
+        self.update_title()
         self.resize(1100, 650)
         self.db = self.load()
         self.key = None
@@ -72,17 +79,24 @@ class Main(QMainWindow):
         self.setCentralWidget(split)
         self.populate()
 
+        menu = self.menuBar().addMenu("Settings")
+        act_loc = QAction("Library location…", self)
+        act_loc.triggered.connect(self.change_location)
+        menu.addAction(act_loc)
+
     # ---- persistence ----
-    @staticmethod
-    def load():
-        db = json.loads(DB_PATH.read_text("utf-8")) if DB_PATH.exists() else {}
+    def load(self):
+        db = json.loads(self.db_path.read_text("utf-8")
+                        ) if self.db_path.exists() else {}
         for e in db.values():
             for k, v in USER_DEFAULTS.items():
                 e["user"].setdefault(k, v)
         return db
 
     def save(self):
-        DB_PATH.write_text(json.dumps(self.db, indent=2, ensure_ascii=False), "utf-8")
+        self.db_path.parent.mkdir(parents=True, exist_ok=True)
+        self.db_path.write_text(json.dumps(
+            self.db, indent=2, ensure_ascii=False), "utf-8")
 
     # ---- list ----
     def populate(self):
@@ -122,6 +136,30 @@ class Main(QMainWindow):
         self.populate()
         self.show_entry(None)
         
+    def update_title(self):
+        self.setWindowTitle(f"Literature — {self.db_path}")
+
+    def change_location(self):
+        path, _ = QFileDialog.getSaveFileName(
+            self, "Library location", str(self.db_path), "JSON (*.json)",
+            options=QFileDialog.Option.DontConfirmOverwrite)
+        if not path:
+            return
+        new = Path(path)
+        if not new.suffix:
+            new = new.with_suffix(".json")
+        if new == self.db_path:
+            return
+        self.db_path = new
+        self.settings.setValue("db_path", str(new))
+        if new.exists():
+            self.db = self.load()  # switch to the library already there
+        else:
+            self.save()            # write the current library to the new location
+        self.populate()
+        self.show_entry(None)
+        self.update_title()
+
 
     # ---- detail view ----
     def show_entry(self, item, _prev=None):
