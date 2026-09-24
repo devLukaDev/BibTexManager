@@ -21,7 +21,7 @@
     },
     "user": {
       "include": false,
-      "notes": ""
+      "notes": "via Martijn\n\nkwam ook omhoog via scholar -> \"trust llm\"\n\nabstract peak: \"Our work reveals complex trust dynamics at the junctions of the chains, with interactions between diverse technical artifacts, individuals, or organizations\""
     }
   },
   "brown2024enhancingtrustllmsalgorithms": {
@@ -38,7 +38,7 @@
     },
     "user": {
       "include": false,
-      "notes": ""
+      "notes": "via Martijn\nook gevonden op google scholar na query \"llm trust output\"\n\nabstract peak: \"This paper surveys evaluation techniques to enhance the trustworthiness and understanding of Large Language Models (LLMs)\""
     }
   },
   "zhang2025systematic": {
@@ -56,7 +56,7 @@
     },
     "user": {
       "include": false,
-      "notes": ""
+      "notes": "via Martijn, op scholar: \"large language models summarization\"\n\nabstract peak: \"his survey thus provides a comprehensive review of the research progress and evolution in text summarization through the lens of these paradigm shifts\""
     }
   },
   "7ad874814fa24e1a96c089839baf6d23": {
@@ -75,7 +75,7 @@
     },
     "user": {
       "include": false,
-      "notes": ""
+      "notes": "Gaat meer over PV's in nederlandse politie.\nNiet handig voor deze SLR.\nvan M. Malsch, idk meer waarvandaan, denk via via papers\nWouter -> ...? -> M. Malsch"
     }
   },
   "ding2025citations": {
@@ -93,7 +93,7 @@
     },
     "user": {
       "include": false,
-      "notes": ""
+      "notes": "via Scholar na query \"llm trust output\"\nabstract peak: \"We explored trust through an anti-monitoring framework, where trust is predicted to be correlated with presence of citations and inversely related to checking citations.\""
     }
   },
   "schroeder2025trustllmjudgmentsreliability": {
@@ -110,7 +110,7 @@
     },
     "user": {
       "include": false,
-      "notes": "Niet direct useful, maar LLM-as-a-judge is misschien wel handig als deel van de pipeline, of als evaluatie van een systeem\n"
+      "notes": "Niet direct useful, maar LLM-as-a-judge is misschien wel handig als deel van de pipeline, of als evaluatie van een systeem\nvia google scholar"
     }
   },
   "goh2026realtimetrustworthinessscoringllm": {
@@ -127,7 +127,7 @@
     },
     "user": {
       "include": false,
-      "notes": "Sounds too good to be true uit de abstract "
+      "notes": "Sounds too good to be true uit de abstract \n\nvia scholar 'trustworthiness llm output'\n\nabstract peak: \"We present CONSTRUCT, a real-time uncertainty estimator that scores the trustworthiness of LLM Structured Outputs. Lower-scoring outputs are more likely to contain errors, enabling automatic prioritization of limited human review bandwidth.\"\n-> mogelijk een techniek om prio te geven aan bepaalde zinnen\nstructured output komt sowieso op een manier terug"
     }
   },
   "10.1007/978-3-032-08333-3_6": {
@@ -147,7 +147,7 @@
     },
     "user": {
       "include": false,
-      "notes": "Might be irrelevant, as it talks more about explaining WITH llms than it does explaining them itself"
+      "notes": "Might be irrelevant, as it talks more about explaining WITH llms than it does explaining them itself. But could be used for epxlaining the LLM output itself. Vooral dat democratizing is vaag,niet echt handig voor mij - gaat over iedereen een expl geven die ze snappen, no matter de voorkennis.\ngevonden via scholar -> \"llm explainability\"\npeak abstract: \"In this work, we introduce a domain-, model-, explanation-agnostic, generalizable and reproducible framework that ensures both transparency and human-centered explanations tailored to the needs of both experts and non-experts\"\n"
     }
   },
   "Liao2024AI": {
@@ -166,7 +166,62 @@
     },
     "user": {
       "include": false,
-      "notes": ""
+      "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \""
+    }
+  },
+  "Biro2025AI": {
+    "bib": {
+      "month": "April",
+      "pmcid": "PMC12022076",
+      "pmid": "40275104",
+      "doi": "10.1038/s41746-025-01586-2",
+      "pages": "222",
+      "number": "1",
+      "volume": "8",
+      "year": "2025",
+      "journal": "npj Digital Medicine",
+      "title": "Opportunities and risks of artificial intelligence in patient portal messaging in primary care",
+      "author": "Biro, JM and Handley, JL and McCurry, Malcolm J and Visconti, A and Weinfeld, J and Trafton, Gregory J and Ratwani, RM",
+      "ENTRYTYPE": "article",
+      "ID": "Biro2025AI"
+    },
+    "user": {
+      "include": false,
+      "notes": "In andere sector, maar wel handig als justification van waarom je technicische guardrails enzo wil hebben, aangezien mensen gewoon lui worden. deze study gaf aan dat zoveel procent van de mensen op een gegeven moment opgeven met checken en gewoon ok doen:\nabstract peak: \"Each error was insufficiently addressed by 13–15 participants, and 35–45% of erroneous drafts were submitted entirely unedited.\"\nVanuit Wout Boeve lecture\n"
+    }
+  },
+  "sharma2024suggestthathumantrust": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2406.02018",
+      "primaryclass": "cs.CL",
+      "archiveprefix": "arXiv",
+      "eprint": "2406.02018",
+      "year": "2024",
+      "author": "Manasi Sharma and Ho Chit Siu and Rohan Paleja and Jaime D. Peña",
+      "title": "Why Would You Suggest That? Human Trust in Language Model Responses",
+      "ENTRYTYPE": "misc",
+      "ID": "sharma2024suggestthathumantrust"
+    },
+    "user": {
+      "include": false,
+      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n"
+    }
+  },
+  "cambria2024xaimeetsllmssurvey": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2407.15248",
+      "primaryclass": "cs.CL",
+      "archiveprefix": "arXiv",
+      "eprint": "2407.15248",
+      "year": "2024",
+      "author": "Erik Cambria and Lorenzo Malandri and Fabio Mercorio and Navid Nobani and Andrea Seveso",
+      "title": "XAI meets LLMs: A Survey of the Relation between Explainable AI and Large Language Models",
+      "ENTRYTYPE": "misc",
+      "ID": "cambria2024xaimeetsllmssurvey"
+    },
+    "user": {
+      "include": false,
+      "notes": "via Scholar -> \"llm explainability\"\nabstract text: \"enhancing performance through XAI and the emerging focus on model interpretability\""
     }
   }
 }
