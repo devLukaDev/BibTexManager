@@ -223,5 +223,59 @@
       "include": false,
       "notes": "via Scholar -> \"llm explainability\"\nabstract text: \"enhancing performance through XAI and the emerging focus on model interpretability\""
     }
+  },
+  "benk2025trust": {
+    "bib": {
+      "doi": "10.1007/s00146-024-02059-y",
+      "year": "2025",
+      "pages": "2083--2106",
+      "volume": "40",
+      "journal": "AI & Society",
+      "title": "Twenty-four years of empirical research on trust in AI: a bibliometric review of trends, overlooked issues, and future directions",
+      "author": "Benk, M. and Kerstan, S. and von Wangenheim, F. and others",
+      "ENTRYTYPE": "article",
+      "ID": "benk2025trust"
+    },
+    "user": {
+      "include": false,
+      "notes": "\"trust ai summary\"\n\n\". Our analysis reveals several “elephants in the room” pertaining to missing perspectives in global discussions on trust in AI\""
+    }
+  },
+  "cakar2026ai": {
+    "bib": {
+      "doi": "10.1007/978-3-032-31048-4_25",
+      "address": "Cham",
+      "publisher": "Springer",
+      "year": "2026",
+      "volume": "16746",
+      "series": "Lecture Notes in Computer Science",
+      "editor": "Degen, H. and Ntoa, S.",
+      "booktitle": "Artificial Intelligence in HCI",
+      "title": "And in AI We Trust? A Qualitative Analysis of Trust-Building in LLM-Based Recommender Systems for Higher Education",
+      "author": "Cakar, M. and Fischer, M.",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "cakar2026ai"
+    },
+    "user": {
+      "include": false,
+      "notes": "\"trust llm summary\"\n\n\"Our results propose a model of situational trust calibration, where trust stems from verifiability and user control rather than affective social cues. This work redefines trust in LLM-based systems as a design issue and offers practical guidance for the responsible adoption of AI in higher education.\""
+    }
+  },
+  "bhatnagar2026reexaminingzeroshotsummarizationempirical": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2607.21010",
+      "primaryclass": "cs.AI",
+      "archiveprefix": "arXiv",
+      "eprint": "2607.21010",
+      "year": "2026",
+      "author": "Vasudha Bhatnagar and Purnima Bindal and Vikas Kumar and Raj Kumari Bahl",
+      "title": "Reexamining zero-shot summarization: Empirical investigation of trustworthiness of LLM-summarizers",
+      "ENTRYTYPE": "misc",
+      "ID": "bhatnagar2026reexaminingzeroshotsummarizationempirical"
+    },
+    "user": {
+      "include": false,
+      "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary"
+    }
   }
 }
