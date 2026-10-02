@@ -13,11 +13,14 @@ from PySide6.QtWidgets import (
     QListWidget, QListWidgetItem, QMainWindow, QMessageBox, QPlainTextEdit, QPushButton,
     QScrollArea, QSplitter, QVBoxLayout, QWidget,
 )
+import shutil
+from PySide6.QtCore import QSettings, Qt, QUrl
+from PySide6.QtGui import QAction, QDesktopServices
 
 DEFAULT_DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH.parent.mkdir(exist_ok=True)
-USER_DEFAULTS = {"include": False, "notes": ""}  # add your own fields here
+USER_DEFAULTS = {"include": False, "notes": "", "pdf": ""}  # add your own fields here
 SKIP = {"ID", "ENTRYTYPE"}
 
 
@@ -64,12 +67,18 @@ class Main(QMainWindow):
         self.notes = QPlainTextEdit()
         self.notes.setPlaceholderText("Notes")
         self.notes.textChanged.connect(self.on_notes_changed)
+        self.pdf_label = QLabel("(no PDF)")
+        self.pdf_label.mouseDoubleClickEvent = lambda e: self.open_pdf()
+        btn_pdf = QPushButton("Attach PDF…")
+        btn_pdf.clicked.connect(self.attach_pdf)
         self.right = QWidget()
         rv = QVBoxLayout(self.right)
         rv.addWidget(scroll, 2)
         rv.addWidget(self.include)
         rv.addWidget(QLabel("Notes"))
         rv.addWidget(self.notes, 1)
+        rv.addWidget(self.pdf_label)
+        rv.addWidget(btn_pdf)
         self.right.setEnabled(False)
 
         split = QSplitter()
@@ -181,9 +190,11 @@ class Main(QMainWindow):
                 self.form.addRow(field, edit)
             self.include.setChecked(e["user"]["include"])
             self.notes.setPlainText(e["user"]["notes"])
+            self.update_pdf_label()
         else:
             self.include.setChecked(False)
             self.notes.clear()
+            self.pdf_label.setText("(no PDF)")
         self.loading = False
 
     # ---- edit handlers ----
@@ -219,6 +230,36 @@ class Main(QMainWindow):
             return
         self.db[self.key]["user"]["notes"] = self.notes.toPlainText()
         self.save()
+        
+    def pdf_dir(self):
+        d = self.db_path.parent / "pdfs"
+        d.mkdir(parents=True, exist_ok=True)
+        return d
+
+    def update_pdf_label(self):
+        pdf = self.db[self.key]["user"]["pdf"]
+        self.pdf_label.setText(Path(pdf).name if pdf else "(no PDF)")
+
+    def attach_pdf(self):
+        path, _ = QFileDialog.getOpenFileName(
+            self, "Attach PDF", "", "PDF files (*.pdf)")
+        if not path:
+            return
+        safe_key = self.key.replace("/", "_")
+        dest = self.pdf_dir() / f"{safe_key}.pdf"
+        shutil.copy(path, dest)
+        self.db[self.key]["user"]["pdf"] = str(dest)
+        self.save()
+        self.update_pdf_label()
+
+    def open_pdf(self):
+        pdf = self.db[self.key]["user"]["pdf"] if self.key else ""
+        if not pdf:
+            return
+        if not Path(pdf).exists():
+            QMessageBox.warning(self, "Open PDF", f"File not found:\n{pdf}")
+            return
+        QDesktopServices.openUrl(QUrl.fromLocalFile(pdf))
 
 
 if __name__ == "__main__":
