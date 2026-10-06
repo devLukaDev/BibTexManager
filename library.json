@@ -251,7 +251,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "",
+      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/benk2025trust.pdf",
       "notes": "\"trust ai summary\"\n\n\". Our analysis reveals several “elephants in the room” pertaining to missing perspectives in global discussions on trust in AI\""
     }
   },
@@ -292,6 +292,116 @@
       "include": false,
       "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
       "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary"
+    }
+  },
+  "10.1145/3772318.3793386": {
+    "bib": {
+      "series": "CHI '26",
+      "location": "Barcelona, Spain",
+      "keywords": "Large Language Models, Human-AI Collaboration, Trust and Quality Perceptions, Scientific Abstracts",
+      "numpages": "25",
+      "articleno": "12",
+      "booktitle": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+      "abstract": "Large Language Models (LLMs) are increasingly used to generate and edit scientific abstracts, yet their integration into academic writing raises questions about trust, quality, and disclosure. Despite growing adoption, little is known about how readers perceive LLM-generated summaries and how these perceptions influence evaluations of scientific work. This paper presents a mixed-methods survey experiment investigating whether readers with ML expertise can distinguish between human- and LLM-generated abstracts, how actual and perceived LLM involvement affects judgments of quality and trustworthiness, and what orientations readers adopt toward AI-assisted writing. Our findings show that participants struggle to reliably identify LLM-generated content, yet their beliefs about LLM involvement significantly shape their evaluations. Notably, abstracts edited by LLMs are rated more favorably than those written solely by humans or LLMs. We also identify three distinct reader orientations toward LLM-assisted writing, offering insights into evolving norms and informing policy around disclosure and acceptable use in scientific communication.",
+      "doi": "10.1145/3772318.3793386",
+      "url": "https://doi.org/10.1145/3772318.3793386",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9798400722783",
+      "year": "2026",
+      "title": "LLM or Human? Perceptions of Trust and Quality in Research Summaries",
+      "author": "Akpinar, Nil-Jana and Avula, Sandeep and Lee, Chia-Jung and Dang, Brandon and Razat, Kaza and Murdock, Vanessa",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/3772318.3793386"
+    },
+    "user": {
+      "include": false,
+      "notes": "scholar query: \"llm output trust\"\n\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"",
+      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/10.1145_3772318.3793386.pdf"
+    }
+  },
+  "10.1145/3716554.3716597": {
+    "bib": {
+      "series": "PCI '24",
+      "location": "Athens, Greece",
+      "keywords": "Large Language Models, EU AI Act, Transparency, Neural Networks, Artificial Intelligence",
+      "numpages": "6",
+      "pages": "281–286",
+      "booktitle": "Proceedings of the 28th Pan-Hellenic Conference on Progress in Computing and Informatics",
+      "abstract": "Transparency is a quintessential requirement in artificial intelligence systems, featuring prominently under the EU AI Act, but it raises immense challenges for LLM developers due to the intrinsic black-box nature of LLMs. The paper discusses some techniques and methodologies that could assist in increasing the transparency of LLMs and achieving conformity with the exacting standards prescribed under the EU AI Act. In this paper, the authors go further in developing the demands that the Act places on transparency, documentation, and human oversight. Moreover, there are inherent issues associated with interpreting LLMs, particularly the trade-offs between performance and interpretability, compounded by intricate systems. Additionally, this paper gives an overview of the current state of the art in explanation methods for LLM outputs, ranging from attention mechanisms over model distillation to post hoc explanation tools. Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles. Through illustrative case study, we demonstrate how these practices can be implemented in GPT-based models to meet regulatory demands. By bridging the gap between advanced AI models and the EU’s regulatory framework, this paper contributes to the development of AI systems that are not only powerful but also transparent, fostering greater trust and acceptance among users and regulators.",
+      "doi": "10.1145/3716554.3716597",
+      "url": "https://doi.org/10.1145/3716554.3716597",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9798400713170",
+      "year": "2025",
+      "title": "Enhancing Transparency in Large Language Models to Meet EU AI Act Requirements",
+      "author": "Kalodanis, Konstantinos and Rizomiliotis, Panagiotis and Feretzakis, Georgios and Kalles, Dimitrios and Verykios, Vassilios and Anagnostopoulos, Dimosthenis",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/3716554.3716597"
+    },
+    "user": {
+      "include": false,
+      "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"",
+      "pdf": ""
+    }
+  },
+  "Song2026Accountability": {
+    "bib": {
+      "doi": "10.1097/ai9.0000000000000009",
+      "pages": "27--29",
+      "number": "1",
+      "volume": "1",
+      "year": "2026",
+      "journal": "AI Evidence-Based Medicine",
+      "title": "Accountability over transparency: A heuristic path to calibrated trust in LLM medical advice",
+      "author": "Song, H. and Lyu, J. and Yip, H. and Cheung, C. M. K.",
+      "ENTRYTYPE": "article",
+      "ID": "Song2026Accountability"
+    },
+    "user": {
+      "include": false,
+      "notes": "Mischien iets te veel medical idk, vrij kort tho dus kan geen kwaad\n\nscholar q: \"llm output transparency\"\n\nabstract peak: \"This\nmisalignment between content reliability and user expectation is\ncommonly described as trust miscalibration\"\n\n\"Thus, for users, espe‑\ncially those who are nonexperts, transparency, despite its intuitive\nappeal, falls short as a trust-calibration mechanism precisely\"",
+      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/Song2026Accountability.pdf"
+    }
+  },
+  "Ogbuokiri2026": {
+    "bib": {
+      "url": "https://doi.org/10.1007/978-981-95-3658-0_51",
+      "doi": "10.1007/978-981-95-3658-0_51",
+      "isbn": "978-981-95-3658-0",
+      "abstract": "Large language models (LLMs) have revolutionized artificial intelligence (AI) by enabling advanced natural language processing and generation capabilities. However, their widespread adoption brings significant challenges related to trustworthiness, responsibility, and ethical considerations. This chapter explores the critical issues surrounding the development and deployment of LLMs, focusing on bias, fairness, misinformation, privacy, and transparency. It highlights the importance of addressing these challenges to ensure that LLMs align with human-centered values and contribute positively to the society. The chapter reviews the architecture and evolution of LLMs, from early models like Generative Pre-trained Transformer (GPT) to advanced systems such as GPT-4, and examines their diverse applications. It also discusses frameworks and strategies for responsible AI development, including bias mitigation techniques, robustness, explainability, and human-in-the-loop approaches. Through case studies and real-world examples, the chapter illustrates both successes and failures in ensuring the trustworthiness of LLMs. Finally, it outlines future research directions and interdisciplinary approaches to advancing responsible AI. By providing a comprehensive roadmap, this chapter aims to guide researchers, developers, and policymakers in creating LLMs that are ethical, fair, and transparent, fostering public trust and ensuring their beneficial impact on the society.",
+      "pages": "2013--2043",
+      "address": "Singapore",
+      "publisher": "Springer Nature Singapore",
+      "year": "2026",
+      "booktitle": "Handbook of Human-Centered Artificial Intelligence",
+      "title": "Trustworthy and Responsible LLM",
+      "editor": "Xu, Wei",
+      "author": "Ogbuokiri, Blessing",
+      "ENTRYTYPE": "inbook",
+      "ID": "Ogbuokiri2026"
+    },
+    "user": {
+      "include": false,
+      "notes": "deel van een heel boek, heb het belangrijkstye eruit geknipt\n\n\"It highlights the importance of addressing these challenges to ensure that LLMs align with human-centered values and contribute positively to the society\"\n\"robustness, explainability, and human-in-the-loop approaches.\"\n\nscholar q: \"llm output trustworthiness\"",
+      "pdf": ""
+    }
+  },
+  "shubham2025trust": {
+    "bib": {
+      "url": "https://openreview.net/forum?id=AQBm6kSiAs",
+      "year": "2025",
+      "booktitle": "NeurIPS 2025 Workshop: Reliable ML from Unreliable Data",
+      "author": "Kumar Shubham and Nishant Sharma and Karn Tiwari and Prathosh AP",
+      "title": "Trust, But Attribute: Tracing Impact of Data on Trustworthiness in Supervised {LLM} Fine-Tuning",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "shubham2025trust"
+    },
+    "user": {
+      "include": false,
+      "notes": "Alleen relevant als er een model gaat worden gefinetuned\n\nscholar q: \"llm output trustworthiness\"\n\npeak: \"In this work, we\npropose a two-stage, compute-efficient repair of the post-SFT models that enhances\ntrustworthiness while preserving downstream performance.\"",
+      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/shubham2025trust.pdf"
     }
   }
 }
