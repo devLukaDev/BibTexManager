@@ -9,19 +9,24 @@ from PySide6.QtGui import QAction
 import bibtexparser
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
-    QApplication, QCheckBox, QFileDialog, QFormLayout, QLabel, QLineEdit,
+    QApplication, QCheckBox, QFileDialog, QFormLayout, QHBoxLayout, QLabel, QLineEdit,
     QListWidget, QListWidgetItem, QMainWindow, QMessageBox, QPlainTextEdit, QPushButton,
     QScrollArea, QSplitter, QVBoxLayout, QWidget,
 )
 import shutil
 from PySide6.QtCore import QSettings, Qt, QUrl
 from PySide6.QtGui import QAction, QDesktopServices
+from PySide6.QtCore import QSize
+from PySide6.QtGui import QPixmap
+from PySide6.QtPdf import QPdfDocument
+from PySide6.QtGui import QImage, QPainter
 
 DEFAULT_DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH.parent.mkdir(exist_ok=True)
 USER_DEFAULTS = {"include": False, "notes": "", "pdf": ""}  # add your own fields here
 SKIP = {"ID", "ENTRYTYPE"}
+PDF_W, PDF_H = 360, 525
 
 
 def label(bib):
@@ -33,14 +38,16 @@ class Main(QMainWindow):
     def __init__(self):
         super().__init__()
         self.settings = QSettings("litlist", "litlist")
-        self.db_path = Path(self.settings.value(
-            "db_path", str(DEFAULT_DB_PATH)))
+        db_path = self.settings.value("db_path", str(DEFAULT_DB_PATH))
+        self.db_path = Path(
+            str(db_path)) if db_path is not None else DEFAULT_DB_PATH
         self.db = self.load()
         self.update_title()
-        self.resize(1100, 650)
+        self.resize(1600, 900)
         self.db = self.load()
         self.key = None
         self.loading = False
+        self.pdf_doc = QPdfDocument(self)
 
         # left: import button + list
         self.list = QListWidget()
@@ -48,37 +55,52 @@ class Main(QMainWindow):
         self.list.itemChanged.connect(self.on_item_checked)
         btn = QPushButton("Import BibTeX…")
         btn.clicked.connect(self.import_bib)
-        left = QWidget()
-        lv = QVBoxLayout(left)
-        lv.addWidget(btn)
-        lv.addWidget(self.list)
         btn_clip = QPushButton("Import from clipboard")
         btn_clip.clicked.connect(self.import_clipboard)
-        lv.addWidget(btn_clip)
+        left = QWidget()
+        lv = QVBoxLayout(left)
+        row = QHBoxLayout()
+        row.addWidget(btn)
+        row.addWidget(btn_clip)
+        lv.addLayout(row)
+        lv.addWidget(self.list)
 
-        # right: detail view
+        # right, top: bibtex fields | PDF preview + attach button
         self.form_host = QWidget()
         self.form = QFormLayout(self.form_host)
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
         scroll.setWidget(self.form_host)
+
+        self.pdf_label = QLabel("(no PDF)")
+        # same size with or without a PDF
+        self.pdf_label.setFixedSize(PDF_W, PDF_H)
+        self.pdf_label.setAlignment(Qt.AlignCenter)
+        self.pdf_label.setStyleSheet("background: white; color: black;")
+        self.pdf_label.mouseDoubleClickEvent = lambda e: self.open_pdf()
+        btn_pdf = QPushButton("Attach PDF…")
+        btn_pdf.clicked.connect(self.attach_pdf)
+        pdf_box = QVBoxLayout()
+        pdf_box.addWidget(self.pdf_label)
+        pdf_box.addWidget(btn_pdf)
+        pdf_box.addStretch(1)
+
+        top = QHBoxLayout()
+        top.addWidget(scroll, 1)
+        top.addLayout(pdf_box)
+
+        # right, bottom: include + notes
         self.include = QCheckBox("Include")
         self.include.toggled.connect(self.on_include_toggled)
         self.notes = QPlainTextEdit()
         self.notes.setPlaceholderText("Notes")
         self.notes.textChanged.connect(self.on_notes_changed)
-        self.pdf_label = QLabel("(no PDF)")
-        self.pdf_label.mouseDoubleClickEvent = lambda e: self.open_pdf()
-        btn_pdf = QPushButton("Attach PDF…")
-        btn_pdf.clicked.connect(self.attach_pdf)
+
         self.right = QWidget()
         rv = QVBoxLayout(self.right)
-        rv.addWidget(scroll, 2)
+        rv.addLayout(top, 2)
         rv.addWidget(self.include)
-        rv.addWidget(QLabel("Notes"))
         rv.addWidget(self.notes, 1)
-        rv.addWidget(self.pdf_label)
-        rv.addWidget(btn_pdf)
         self.right.setEnabled(False)
 
         split = QSplitter()
@@ -143,6 +165,16 @@ class Main(QMainWindow):
                 self.db[key] = {"bib": entry, "user": dict(USER_DEFAULTS)}
         self.save()
         self.populate()
+        self.select_key(entries[0]["ID"])
+
+    def select_key(self, key):
+        for i in range(self.list.count()):
+            item = self.list.item(i)
+            if item.data(Qt.UserRole) == key:
+                # fires currentItemChanged -> show_entry
+                self.list.setCurrentItem(item)
+                self.list.scrollToItem(item)
+                return
         self.show_entry(None)
         
     def update_title(self):
@@ -195,6 +227,7 @@ class Main(QMainWindow):
             self.include.setChecked(False)
             self.notes.clear()
             self.pdf_label.setText("(no PDF)")
+
         self.loading = False
 
     # ---- edit handlers ----
@@ -236,10 +269,6 @@ class Main(QMainWindow):
         d.mkdir(parents=True, exist_ok=True)
         return d
 
-    def update_pdf_label(self):
-        pdf = self.db[self.key]["user"]["pdf"]
-        self.pdf_label.setText(Path(pdf).name if pdf else "(no PDF)")
-
     def attach_pdf(self):
         path, _ = QFileDialog.getOpenFileName(
             self, "Attach PDF", "", "PDF files (*.pdf)")
@@ -248,7 +277,8 @@ class Main(QMainWindow):
         safe_key = self.key.replace("/", "_")
         dest = self.pdf_dir() / f"{safe_key}.pdf"
         shutil.copy(path, dest)
-        self.db[self.key]["user"]["pdf"] = str(dest)
+        self.db[self.key]["user"]["pdf"] = dest.relative_to(
+            self.db_path.parent).as_posix()
         self.save()
         self.update_pdf_label()
 
@@ -256,10 +286,44 @@ class Main(QMainWindow):
         pdf = self.db[self.key]["user"]["pdf"] if self.key else ""
         if not pdf:
             return
-        if not Path(pdf).exists():
-            QMessageBox.warning(self, "Open PDF", f"File not found:\n{pdf}")
+        path = self.resolve_pdf(pdf)
+        if not path.exists():
+            QMessageBox.warning(self, "Open PDF", f"File not found:\n{path}")
             return
-        QDesktopServices.openUrl(QUrl.fromLocalFile(pdf))
+        QDesktopServices.openUrl(QUrl.fromLocalFile(str(path)))
+
+    def resolve_pdf(self, stored):
+        p = Path(stored)
+        if not p.is_absolute():
+            return self.db_path.parent / p
+        if p.exists():
+            return p
+        # old absolute entry from another device: fall back to the pdfs folder here
+        return self.pdf_dir() / p.name
+
+    def update_pdf_label(self):
+        pdf = self.db[self.key]["user"]["pdf"]
+        if not pdf:
+            self.pdf_label.setText("(no PDF)")
+            return
+        path = self.resolve_pdf(pdf)
+        if not path.exists():
+            self.pdf_label.setText(f"(PDF not found: {path.name})")
+            return
+        self.pdf_doc.load(str(path))
+        if self.pdf_doc.status() != QPdfDocument.Status.Ready:
+            self.pdf_label.setText(f"(cannot preview {path.name})")
+            return
+        pts = self.pdf_doc.pagePointSize(0)
+        h = int(PDF_W * pts.height() / pts.width())
+        img = self.pdf_doc.render(0, QSize(PDF_W, h))
+        page = QImage(img.size(), QImage.Format_RGB32)
+        page.fill(Qt.white)
+        p = QPainter(page)
+        p.drawImage(0, 0, img)
+        p.end()
+        self.pdf_label.setPixmap(QPixmap.fromImage(
+            page.copy(0, 0, PDF_W, min(PDF_H, h))))
 
 
 if __name__ == "__main__":
