@@ -21,7 +21,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/10.1145_3706598.3713787.pdf",
+      "pdf": "pdfs/10.1145_3706598.3713787.pdf",
       "notes": "via Martijn\n\nkwam ook omhoog via scholar -> \"trust llm\"\n\nabstract peak: \"Our work reveals complex trust dynamics at the junctions of the chains, with interactions between diverse technical artifacts, individuals, or organizations\""
     }
   },
@@ -39,7 +39,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/brown2024enhancingtrustllmsalgorithms.pdf",
+      "pdf": "pdfs/brown2024enhancingtrustllmsalgorithms.pdf",
       "notes": "via Martijn\nook gevonden op google scholar na query \"llm trust output\"\n\nabstract peak: \"This paper surveys evaluation techniques to enhance the trustworthiness and understanding of Large Language Models (LLMs)\""
     }
   },
@@ -58,7 +58,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/zhang2025systematic.pdf",
+      "pdf": "pdfs/zhang2025systematic.pdf",
       "notes": "via Martijn, op scholar: \"large language models summarization\"\n\nabstract peak: \"his survey thus provides a comprehensive review of the research progress and evolution in text summarization through the lens of these paradigm shifts\""
     }
   },
@@ -78,7 +78,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/7ad874814fa24e1a96c089839baf6d23.pdf",
+      "pdf": "pdfs/7ad874814fa24e1a96c089839baf6d23.pdf",
       "notes": "Gaat meer over PV's in nederlandse politie.\nNiet handig voor deze SLR.\nvan M. Malsch, idk meer waarvandaan, denk via via papers\nWouter -> ...? -> M. Malsch"
     }
   },
@@ -97,7 +97,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/ding2025citations.pdf",
+      "pdf": "pdfs/ding2025citations.pdf",
       "notes": "via Scholar na query \"llm trust output\"\nabstract peak: \"We explored trust through an anti-monitoring framework, where trust is predicted to be correlated with presence of citations and inversely related to checking citations.\""
     }
   },
@@ -115,7 +115,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/schroeder2025trustllmjudgmentsreliability.pdf",
+      "pdf": "pdfs/schroeder2025trustllmjudgmentsreliability.pdf",
       "notes": "Niet direct useful, maar LLM-as-a-judge is misschien wel handig als deel van de pipeline, of als evaluatie van een systeem\nvia google scholar"
     }
   },
@@ -133,7 +133,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/goh2026realtimetrustworthinessscoringllm.pdf",
+      "pdf": "pdfs/goh2026realtimetrustworthinessscoringllm.pdf",
       "notes": "Sounds too good to be true uit de abstract \n\nvia scholar 'trustworthiness llm output'\n\nabstract peak: \"We present CONSTRUCT, a real-time uncertainty estimator that scores the trustworthiness of LLM Structured Outputs. Lower-scoring outputs are more likely to contain errors, enabling automatic prioritization of limited human review bandwidth.\"\n-> mogelijk een techniek om prio te geven aan bepaalde zinnen\nstructured output komt sowieso op een manier terug"
     }
   },
@@ -154,7 +154,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/10.1007_978-3-032-08333-3_6.pdf",
+      "pdf": "pdfs/10.1007_978-3-032-08333-3_6.pdf",
       "notes": "Might be irrelevant, as it talks more about explaining WITH llms than it does explaining them itself. But could be used for epxlaining the LLM output itself. Vooral dat democratizing is vaag,niet echt handig voor mij - gaat over iedereen een expl geven die ze snappen, no matter de voorkennis.\ngevonden via scholar -> \"llm explainability\"\npeak abstract: \"In this work, we introduce a domain-, model-, explanation-agnostic, generalizable and reproducible framework that ensures both transparency and human-centered explanations tailored to the needs of both experts and non-experts\"\n"
     }
   },
@@ -175,7 +175,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/Liao2024AI.pdf",
+      "pdf": "pdfs/Liao2024AI.pdf",
       "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \""
     }
   },
@@ -197,7 +197,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/Biro2025AI.pdf",
+      "pdf": "pdfs/Biro2025AI.pdf",
       "notes": "In andere sector, maar wel handig als justification van waarom je technicische guardrails enzo wil hebben, aangezien mensen gewoon lui worden. deze study gaf aan dat zoveel procent van de mensen op een gegeven moment opgeven met checken en gewoon ok doen:\nabstract peak: \"Each error was insufficiently addressed by 13–15 participants, and 35–45% of erroneous drafts were submitted entirely unedited.\"\nVanuit Wout Boeve lecture\n"
     }
   },
@@ -215,7 +215,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/sharma2024suggestthathumantrust.pdf",
+      "pdf": "pdfs/sharma2024suggestthathumantrust.pdf",
       "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n"
     }
   },
@@ -233,7 +233,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/cambria2024xaimeetsllmssurvey.pdf",
+      "pdf": "pdfs/cambria2024xaimeetsllmssurvey.pdf",
       "notes": "via Scholar -> \"llm explainability\"\nabstract text: \"enhancing performance through XAI and the emerging focus on model interpretability\""
     }
   },
@@ -251,7 +251,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/benk2025trust.pdf",
+      "pdf": "pdfs/benk2025trust.pdf",
       "notes": "\"trust ai summary\"\n\n\". Our analysis reveals several “elephants in the room” pertaining to missing perspectives in global discussions on trust in AI\""
     }
   },
@@ -272,7 +272,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/cakar2026ai.pdf",
+      "pdf": "pdfs/cakar2026ai.pdf",
       "notes": "\"trust llm summary\"\n\n\"Our results propose a model of situational trust calibration, where trust stems from verifiability and user control rather than affective social cues. This work redefines trust in LLM-based systems as a design issue and offers practical guidance for the responsible adoption of AI in higher education.\""
     }
   },
@@ -290,7 +290,7 @@
     },
     "user": {
       "include": false,
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
+      "pdf": "pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
       "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary"
     }
   },
@@ -317,7 +317,7 @@
     "user": {
       "include": false,
       "notes": "scholar query: \"llm output trust\"\n\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"",
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/10.1145_3772318.3793386.pdf"
+      "pdf": "pdfs/10.1145_3772318.3793386.pdf"
     }
   },
   "10.1145/3716554.3716597": {
@@ -343,7 +343,7 @@
     "user": {
       "include": false,
       "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"",
-      "pdf": ""
+      "pdf": "pdfs/10.1145_3716554.3716597.pdf"
     }
   },
   "Song2026Accountability": {
@@ -362,7 +362,7 @@
     "user": {
       "include": false,
       "notes": "Mischien iets te veel medical idk, vrij kort tho dus kan geen kwaad\n\nscholar q: \"llm output transparency\"\n\nabstract peak: \"This\nmisalignment between content reliability and user expectation is\ncommonly described as trust miscalibration\"\n\n\"Thus, for users, espe‑\ncially those who are nonexperts, transparency, despite its intuitive\nappeal, falls short as a trust-calibration mechanism precisely\"",
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/Song2026Accountability.pdf"
+      "pdf": "pdfs/Song2026Accountability.pdf"
     }
   },
   "Ogbuokiri2026": {
@@ -385,7 +385,7 @@
     "user": {
       "include": false,
       "notes": "deel van een heel boek, heb het belangrijkstye eruit geknipt\n\n\"It highlights the importance of addressing these challenges to ensure that LLMs align with human-centered values and contribute positively to the society\"\n\"robustness, explainability, and human-in-the-loop approaches.\"\n\nscholar q: \"llm output trustworthiness\"",
-      "pdf": ""
+      "pdf": "pdfs/Ogbuokiri2026.pdf"
     }
   },
   "shubham2025trust": {
@@ -401,7 +401,7 @@
     "user": {
       "include": false,
       "notes": "Alleen relevant als er een model gaat worden gefinetuned\n\nscholar q: \"llm output trustworthiness\"\n\npeak: \"In this work, we\npropose a two-stage, compute-efficient repair of the post-SFT models that enhances\ntrustworthiness while preserving downstream performance.\"",
-      "pdf": "/home/luka/Documents/GitHub/BibTexManager/pdfs/shubham2025trust.pdf"
+      "pdf": "pdfs/shubham2025trust.pdf"
     }
   }
 }

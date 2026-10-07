@@ -3,6 +3,8 @@
 import json
 import sys
 from pathlib import Path
+import os
+import subprocess
 
 from PySide6.QtCore import QSettings, Qt
 from PySide6.QtGui import QAction
@@ -64,6 +66,10 @@ class Main(QMainWindow):
         row.addWidget(btn_clip)
         lv.addLayout(row)
         lv.addWidget(self.list)
+        self.amount = QLabel()
+        self.amount.setAlignment(Qt.AlignRight)
+        self.update_amount()
+        lv.addWidget(self.amount)
 
         # right, top: bibtex fields | PDF preview + attach button
         self.form_host = QWidget()
@@ -123,6 +129,7 @@ class Main(QMainWindow):
             for k, v in USER_DEFAULTS.items():
                 e["user"].setdefault(k, v)
         return db
+
 
     def save(self):
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -290,7 +297,17 @@ class Main(QMainWindow):
         if not path.exists():
             QMessageBox.warning(self, "Open PDF", f"File not found:\n{path}")
             return
-        QDesktopServices.openUrl(QUrl.fromLocalFile(str(path)))
+        if getattr(sys, "frozen", False) and sys.platform.startswith("linux"):
+            env = dict(os.environ)
+            # PyInstaller saves the original here
+            orig = env.pop("LD_LIBRARY_PATH_ORIG", None)
+            if orig is not None:
+                env["LD_LIBRARY_PATH"] = orig
+            else:
+                env.pop("LD_LIBRARY_PATH", None)
+            subprocess.Popen(["xdg-open", str(path)], env=env)
+        else:
+            QDesktopServices.openUrl(QUrl.fromLocalFile(str(path)))
 
     def resolve_pdf(self, stored):
         p = Path(stored)
@@ -324,6 +341,14 @@ class Main(QMainWindow):
         p.end()
         self.pdf_label.setPixmap(QPixmap.fromImage(
             page.copy(0, 0, PDF_W, min(PDF_H, h))))
+
+    def update_amount(self):
+        total = len(self.db)
+        included = sum(
+            1 for e in self.db.values()
+            if e.get("user", {}).get("include", False)
+        )
+        self.amount.setText(f"{total} entries ({included} included)")
 
 
 if __name__ == "__main__":
