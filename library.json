@@ -174,7 +174,7 @@
       "ID": "Liao2024AI"
     },
     "user": {
-      "include": false,
+      "include": true,
       "pdf": "pdfs/Liao2024AI.pdf",
       "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \""
     }
@@ -214,7 +214,7 @@
       "ID": "sharma2024suggestthathumantrust"
     },
     "user": {
-      "include": false,
+      "include": true,
       "pdf": "pdfs/sharma2024suggestthathumantrust.pdf",
       "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n"
     }
@@ -271,7 +271,7 @@
       "ID": "cakar2026ai"
     },
     "user": {
-      "include": false,
+      "include": true,
       "pdf": "pdfs/cakar2026ai.pdf",
       "notes": "\"trust llm summary\"\n\n\"Our results propose a model of situational trust calibration, where trust stems from verifiability and user control rather than affective social cues. This work redefines trust in LLM-based systems as a design issue and offers practical guidance for the responsible adoption of AI in higher education.\""
     }
@@ -289,7 +289,7 @@
       "ID": "bhatnagar2026reexaminingzeroshotsummarizationempirical"
     },
     "user": {
-      "include": false,
+      "include": true,
       "pdf": "pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
       "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary"
     }
@@ -315,7 +315,7 @@
       "ID": "10.1145/3772318.3793386"
     },
     "user": {
-      "include": false,
+      "include": true,
       "notes": "scholar query: \"llm output trust\"\n\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"",
       "pdf": "pdfs/10.1145_3772318.3793386.pdf"
     }
@@ -341,7 +341,7 @@
       "ID": "10.1145/3716554.3716597"
     },
     "user": {
-      "include": false,
+      "include": true,
       "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"",
       "pdf": "pdfs/10.1145_3716554.3716597.pdf"
     }
