@@ -291,7 +291,7 @@
     "user": {
       "include": true,
       "pdf": "pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
-      "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary\n\nGeprint want zero-shot is in principe wat er in vorige papers van wouter en casper ook gedaan is, maar deze paper is echt ziek nieuw\n"
+      "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary\n\nGeprint want zero-shot is in principe wat er in vorige papers van wouter en casper ook gedaan is, maar deze paper is echt ziek nieuw\nSamebvatting in TYPST\n"
     }
   },
   "10.1145/3772318.3793386": {
