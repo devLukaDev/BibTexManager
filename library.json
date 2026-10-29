@@ -176,7 +176,7 @@
     "user": {
       "include": true,
       "pdf": "pdfs/Liao2024AI.pdf",
-      "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \"\n\nGeprint, want beetje general + monography, voor snowball effect op meer specialized papers\n"
+      "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \"\n\nGeprint, want beetje general + monography, voor snowball effect op meer specialized papers\nzie typst\n"
     }
   },
   "Biro2025AI": {
@@ -216,7 +216,7 @@
     "user": {
       "include": true,
       "pdf": "pdfs/sharma2024suggestthathumantrust.pdf",
-      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\n\nGEPRINT EN GELEZEN"
+      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\n\ntransparency en accuracy leken mij erg belangrijk, deze gaat in op explanations van modellen ne of dat trust fostert; vandaar geprint als een van eersten\nGEPRINT EN GELEZEN\nzie typst"
     }
   },
   "cambria2024xaimeetsllmssurvey": {
@@ -316,7 +316,7 @@
     },
     "user": {
       "include": true,
-      "notes": "scholar query: \"llm output trust\"\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"\n\nAls een van eerste geprint want letterlijk mijn RQ",
+      "notes": "scholar query: \"llm output trust\"\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"\n\nAls een van eerste geprint want letterlijk mijn RQ, plus veel related work -> monography voor snowvballing\nTypst, zie daar ook alle interessant sneeuwballen papers",
       "pdf": "pdfs/10.1145_3772318.3793386.pdf"
     }
   },
@@ -342,7 +342,7 @@
     },
     "user": {
       "include": true,
-      "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"\n\nAls een van eerste geprint omdat die performance vs. interpretability trade-off best belangrijk gaat zijjn denken we",
+      "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"\n\nAls een van eerste geprint omdat die performance vs. interpretability trade-off best belangrijk gaat zijjn denken we\nzie typst",
       "pdf": "pdfs/10.1145_3716554.3716597.pdf"
     }
   },
