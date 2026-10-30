@@ -174,7 +174,7 @@
       "ID": "Liao2024AI"
     },
     "user": {
-      "include": true,
+      "include": false,
       "pdf": "pdfs/Liao2024AI.pdf",
       "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \"\n\nGeprint, want beetje general + monography, voor snowball effect op meer specialized papers\nzie typst\n"
     }
@@ -214,7 +214,7 @@
       "ID": "sharma2024suggestthathumantrust"
     },
     "user": {
-      "include": true,
+      "include": false,
       "pdf": "pdfs/sharma2024suggestthathumantrust.pdf",
       "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\n\ntransparency en accuracy leken mij erg belangrijk, deze gaat in op explanations van modellen ne of dat trust fostert; vandaar geprint als een van eersten\nGEPRINT EN GELEZEN\nzie typst"
     }
@@ -271,7 +271,7 @@
       "ID": "cakar2026ai"
     },
     "user": {
-      "include": true,
+      "include": false,
       "pdf": "pdfs/cakar2026ai.pdf",
       "notes": "\"trust llm summary\"\n\n\"Our results propose a model of situational trust calibration, where trust stems from verifiability and user control rather than affective social cues. This work redefines trust in LLM-based systems as a design issue and offers practical guidance for the responsible adoption of AI in higher education.\"\n\n"
     }
@@ -289,7 +289,7 @@
       "ID": "bhatnagar2026reexaminingzeroshotsummarizationempirical"
     },
     "user": {
-      "include": true,
+      "include": false,
       "pdf": "pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
       "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary\n\nGeprint want zero-shot is in principe wat er in vorige papers van wouter en casper ook gedaan is, maar deze paper is echt ziek nieuw\nSamebvatting in TYPST\n"
     }
@@ -315,7 +315,7 @@
       "ID": "10.1145/3772318.3793386"
     },
     "user": {
-      "include": true,
+      "include": false,
       "notes": "scholar query: \"llm output trust\"\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"\n\nAls een van eerste geprint want letterlijk mijn RQ, plus veel related work -> monography voor snowvballing\nTypst, zie daar ook alle interessant sneeuwballen papers",
       "pdf": "pdfs/10.1145_3772318.3793386.pdf"
     }
@@ -341,7 +341,7 @@
       "ID": "10.1145/3716554.3716597"
     },
     "user": {
-      "include": true,
+      "include": false,
       "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"\n\nAls een van eerste geprint omdat die performance vs. interpretability trade-off best belangrijk gaat zijjn denken we\nzie typst",
       "pdf": "pdfs/10.1145_3716554.3716597.pdf"
     }
@@ -483,7 +483,167 @@
     "user": {
       "include": false,
       "notes": "snowball via Vera Roadmap\n\ndie had het over \"For example, prior research explored techniques that directly\noutput rationales together with the model prediction\", dat zou dus deze paper zijn\n\n",
-      "pdf": ""
+      "pdf": "pdfs/10.3389_frai.2023.1225093.pdf"
+    }
+  },
+  "10.1145/3630106.3658941": {
+    "bib": {
+      "series": "FAccT '24",
+      "location": "Rio de Janeiro, Brazil",
+      "keywords": "Human-AI interaction, Large language models, Overreliance, Trust in AI, Uncertainty expression",
+      "numpages": "14",
+      "pages": "822–835",
+      "booktitle": "Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency",
+      "abstract": "Widely deployed large language models (LLMs) can produce convincing yet incorrect outputs, potentially misleading users who may rely on them as if they were correct. To reduce such overreliance, there have been calls for LLMs to communicate their uncertainty to end users. However, there has been little empirical work examining how users perceive and act upon LLMs’ expressions of uncertainty. We explore this question through a large-scale, pre-registered, human-subject experiment (N=404) in which participants answer medical questions with or without access to responses from a fictional LLM-infused search engine. Using both behavioral and self-reported measures, we examine how different natural language expressions of uncertainty impact participants’ reliance, trust, and overall task performance. We find that first-person expressions (e.g., “I’m not sure, but...”) decrease participants’ confidence in the system and tendency to agree with the system’s answers, while increasing participants’ accuracy. An exploratory analysis suggests that this increase can be attributed to reduced (but not fully eliminated) overreliance on incorrect answers. While we observe similar effects for uncertainty expressed from a general perspective (e.g., “It’s not clear, but...”), these effects are weaker and not statistically significant. Our findings suggest that using natural language expressions of uncertainty may be an effective approach for reducing overreliance on LLMs, but that the precise language used matters. This highlights the importance of user testing before deploying LLMs at scale.",
+      "doi": "10.1145/3630106.3658941",
+      "url": "https://doi.org/10.1145/3630106.3658941",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9798400704505",
+      "year": "2024",
+      "title": "\"I'm Not Sure, But...\": Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust",
+      "author": "Kim, Sunnie S. Y. and Liao, Q. Vera and Vorvoreanu, Mihaela and Ballard, Stephanie and Vaughan, Jennifer Wortman",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/3630106.3658941"
+    },
+    "user": {
+      "include": false,
+      "notes": "Ik was naar papers aan het kijken over uncertainty, nadat VeraLiao roadmap het daar ook over had en wat papers referenceerde, maar die waren allemaal vrij oud. \nUncertainty communiceren was sowieso een goed idee, aldus VeraLiao en And In AI We Trust\nDus scholar - > \"communicating uncertainty llm\"\ndeze kwam omhoog met kneiter veel refs\n\nGaat wel over search engines, maar is wel generalizable vind ik.",
+      "pdf": "pdfs/10.1145_3630106.3658941.pdf"
+    }
+  },
+  "10.1145/3476068": {
+    "bib": {
+      "keywords": "artificial intelligence, decision making, methodology, trust",
+      "numpages": "39",
+      "articleno": "327",
+      "month": "October",
+      "journal": "Proc. ACM Hum.-Comput. Interact.",
+      "abstract": "The spread of AI-embedded systems involved in human decision making makes studying human trust in these systems critical. However, empirically investigating trust is challenging. One reason is the lack of standard protocols to design trust experiments. In this paper, we present a survey of existing methods to empirically investigate trust in AI-assisted decision making and analyse the corpus along the constitutive elements of an experimental protocol. We find that the definition of trust is not commonly integrated in experimental protocols, which can lead to findings that are overclaimed or are hard to interpret and compare across studies. Drawing from empirical practices in social and cognitive studies on human-human trust, we provide practical guidelines to improve the methodology of studying Human-AI trust in decision-making contexts. In addition, we bring forward research opportunities of two types: one focusing on further investigation regarding trust methodologies and the other on factors that impact Human-AI trust.",
+      "doi": "10.1145/3476068",
+      "url": "https://doi.org/10.1145/3476068",
+      "number": "CSCW2",
+      "volume": "5",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "issue_date": "October 2021",
+      "year": "2021",
+      "title": "How to Evaluate Trust in AI-Assisted Decision Making? A Survey of Empirical Methodologies",
+      "author": "Vereschak, Oleksandra and Bailly, Gilles and Caramiaux, Baptiste",
+      "ENTRYTYPE": "article",
+      "ID": "10.1145/3476068"
+    },
+    "user": {
+      "include": false,
+      "notes": "Snowballed -> vanuit “I’m Not Sure, But...”: Examining the Impact of Large Language Models’ Uncertainty Expression on User Reliance and Trust\nDeze paper gaat over definities van Trust, omdat dat er veel zijn (was ik ook al achter gekomen)\nSowieso handig om G1 te volgen, die state: definitieer Trust in je paper, altijd!",
+      "pdf": "pdfs/10.1145_3476068.pdf"
+    }
+  },
+  "ICLR2024_6733cf15": {
+    "bib": {
+      "year": "2024",
+      "volume": "2024",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/6733cf15e10e2cd1d59af033c3bb8507-Paper-Conference.pdf",
+      "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "pages": "23650--23678",
+      "editor": "B. Kim and Y. Yue and S. Chaudhuri and K. Fragkiadaki and M. Khan and Y. Sun",
+      "booktitle": "International Conference on Learning Representations",
+      "author": "Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and LI, YIFEI and Fu, Jie and He, Junxian and Hooi, Bryan",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "ICLR2024_6733cf15"
+    },
+    "user": {
+      "include": false,
+      "notes": "Meer implementation-wise, welke approaches zijn er om uncertainty te berekenen op een query\nSnowball-esque, zocht op ''communicating uncertainty llm' op scholar\n",
+      "pdf": "pdfs/ICLR2024_6733cf15.pdf"
+    }
+  },
+  "wang2026agenttracestrustsurvey": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2606.04990",
+      "primaryclass": "cs.CR",
+      "archiveprefix": "arXiv",
+      "eprint": "2606.04990",
+      "year": "2026",
+      "author": "Yiqi Wang and Jiaqi Zhang and Zhangkai Wu and Taotao Cai and Zirui Liu and Zequn Sun and Mingkai Zheng and Manqing Dong and Yu-Xuan Qiu and Xuefei Yin and Yanming Zhu",
+      "title": "From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents",
+      "ENTRYTYPE": "misc",
+      "ID": "wang2026agenttracestrustsurvey"
+    },
+    "user": {
+      "include": false,
+      "notes": "Voor implementation: source tracability, verification, trust functions, the whole shebang\n\nHelemaal crazy wel, heel technisch maar volgens mij komt het allemaal neer op hoe je elke stap van een LLM (en in dit geval voornamelijk een agent die ook kan toolcallen, retrieven en sjit) logged, en daar vervolgens ook dingen op kan loslaten om te verfieieren ofzo>!?\n\nscholar: \"source traceability llm\"",
+      "pdf": "pdfs/wang2026agenttracestrustsurvey.pdf"
+    }
+  },
+  "pmlr-v235-huang24x": {
+    "bib": {
+      "abstract": "Large language models (LLMs) have gained considerable attention for their excellent natural language processing capabilities. Nonetheless, these LLMs present many challenges, particularly in the realm of trustworthiness. This paper introduces TrustLLM, a comprehensive study of trustworthiness in LLMs, including principles for different dimensions of trustworthiness, established benchmark, evaluation, and analysis of trustworthiness for mainstream LLMs, and discussion of open challenges and future directions. Specifically, we first propose a set of principles for trustworthy LLMs that span eight different dimensions. Based on these principles, we further establish a benchmark across six dimensions including truthfulness, safety, fairness, robustness, privacy, and machine ethics. We then present a study evaluating 16 mainstream LLMs in TrustLLM, consisting of over 30 datasets. Our findings firstly show that in general trustworthiness and capability (i.e., functional effectiveness) are positively related. Secondly, our observations reveal that proprietary LLMs generally outperform most open-source counterparts in terms of trustworthiness, raising concerns about the potential risks of widely accessible open-source LLMs. However, a few open-source LLMs come very close to proprietary ones, suggesting that open-source models can achieve high levels of trustworthiness without additional mechanisms like <em>moderator</em>, offering valuable insights for developers in this field. Thirdly, it is important to note that some LLMs may be overly calibrated towards exhibiting trustworthiness, to the extent that they compromise their utility by mistakenly treating benign prompts as harmful and consequently not responding. Besides these observations, we’ve uncovered key insights into the multifaceted trustworthiness in LLMs. We emphasize the importance of ensuring transparency not only in the models themselves but also in the technologies that underpin trustworthiness. We advocate that the establishment of an AI alliance between industry, academia, the open-source community to foster collaboration is imperative to advance the trustworthiness of LLMs.",
+      "url": "https://proceedings.mlr.press/v235/huang24x.html",
+      "pdf": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/huang24x/huang24x.pdf",
+      "publisher": "PMLR",
+      "month": "21--27 Jul",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": "235",
+      "editor": "Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix",
+      "year": "2024",
+      "pages": "20166--20270",
+      "booktitle": "Proceedings of the 41st International Conference on Machine Learning",
+      "author": "Huang, Yue and Sun, Lichao and Wang, Haoran and Wu, Siyuan and Zhang, Qihui and Li, Yuan and Gao, Chujie and Huang, Yixin and Lyu, Wenhan and Zhang, Yixuan and Li, Xiner and Sun, Hanchi and Liu, Zhengliang and Liu, Yixin and Wang, Yijue and Zhang, Zhikun and Vidgen, Bertie and Kailkhura, Bhavya and Xiong, Caiming and Xiao, Chaowei and Li, Chunyuan and Xing, Eric P. and Huang, Furong and Liu, Hao and Ji, Heng and Wang, Hongyi and Zhang, Huan and Yao, Huaxiu and Kellis, Manolis and Zitnik, Marinka and Jiang, Meng and Bansal, Mohit and Zou, James and Pei, Jian and Liu, Jian and Gao, Jianfeng and Han, Jiawei and Zhao, Jieyu and Tang, Jiliang and Wang, Jindong and Vanschoren, Joaquin and Mitchell, John and Shu, Kai and Xu, Kaidi and Chang, Kai-Wei and He, Lifang and Huang, Lifu and Backes, Michael and Gong, Neil Zhenqiang and Yu, Philip S. and Chen, Pin-Yu and Gu, Quanquan and Xu, Ran and Ying, Rex and Ji, Shuiwang and Jana, Suman and Chen, Tianlong and Liu, Tianming and Zhou, Tianyi and Wang, William Yang and Li, Xiang and Zhang, Xiangliang and Wang, Xiao and Xie, Xing and Chen, Xun and Wang, Xuyu and Liu, Yan and Ye, Yanfang and Cao, Yinzhi and Chen, Yong and Zhao, Yue",
+      "title": "Position: TrustLLM: Trustworthiness in Large Language Models",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "pmlr-v235-huang24x"
+    },
+    "user": {
+      "include": false,
+      "notes": "TrustLLM, snowball vanaf LLM or Human? Perceptions of Trust and Information Quality in Research Summaries (hij is daar [22])\nSurvey over Trust in LLMS, echt mega paper\n\nwonder dat ik deze nog niet gevonden had?!!?!\nwordt veel gereft, voornamelijk de 6 dimensions of trust for LLMs\n",
+      "pdf": "pdfs/pmlr-v235-huang24x.pdf"
+    }
+  },
+  "kuhn2023semanticuncertaintylinguisticinvariances": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2302.09664",
+      "primaryclass": "cs.CL",
+      "archiveprefix": "arXiv",
+      "eprint": "2302.09664",
+      "year": "2023",
+      "author": "Lorenz Kuhn and Yarin Gal and Sebastian Farquhar",
+      "title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+      "ENTRYTYPE": "misc",
+      "ID": "kuhn2023semanticuncertaintylinguisticinvariances"
+    },
+    "user": {
+      "include": false,
+      "notes": "Gesnowballed ergens uit \n\n",
+      "pdf": "pdfs/kuhn2023semanticuncertaintylinguisticinvariances.pdf"
+    }
+  },
+  "10.1145/3744238": {
+    "bib": {
+      "keywords": "Uncertainty quantification, large language models (LLMs), confidence estimation",
+      "numpages": "38",
+      "articleno": "63",
+      "month": "September",
+      "journal": "ACM Comput. Surv.",
+      "abstract": "The remarkable performance of large language models (LLMs) in content generation, coding, and common-sense reasoning has spurred widespread integration into many facets of society. However, integration of LLMs raises valid questions on their reliability and trustworthiness, given their propensity to generate hallucinations: plausible, factually-incorrect responses, which are expressed with striking confidence. Previous work has shown that hallucinations and other non-factual responses generated by LLMs can be detected by examining the uncertainty of the LLM in its response to the pertinent prompt, driving significant research efforts devoted to quantifying the uncertainty of LLMs. This survey seeks to provide an extensive review of existing uncertainty quantification methods for LLMs, identifying their salient features, along with their strengths and weaknesses. We present existing methods within a relevant taxonomy, unifying ostensibly disparate methods to aid understanding of the state-of-the-art. Furthermore, we highlight applications of uncertainty quantification methods for LLMs, spanning chatbot and textual applications to embodied artificial intelligence applications in robotics. We conclude with open research challenges in the uncertainty quantification of LLMs, seeking to motivate future research.",
+      "doi": "10.1145/3744238",
+      "url": "https://doi.org/10.1145/3744238",
+      "issn": "0360-0300",
+      "number": "3",
+      "volume": "58",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "issue_date": "February 2026",
+      "year": "2025",
+      "title": "A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions",
+      "author": "Shorinwa, Ola and Mei, Zhiting and Lidard, Justin and Ren, Allen Z. and Majumdar, Anirudha",
+      "ENTRYTYPE": "article",
+      "ID": "10.1145/3744238"
+    },
+    "user": {
+      "include": false,
+      "notes": "Scholar: \"uncertainty llms\"\n\nMeta, dus heleboel papers kunnen eruit snowballen, waarvan ik er wrsnlk al een paar heb maar ik denk deze lezen voordat ik die anderen doe",
+      "pdf": "pdfs/10.1145_3744238.pdf"
     }
   }
 }
