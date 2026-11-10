@@ -342,7 +342,7 @@
     },
     "user": {
       "include": false,
-      "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"\n\nAls een van eerste geprint omdat die performance vs. interpretability trade-off best belangrijk gaat zijjn denken we\nzie typst",
+      "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"\n\nAls een van eerste geprint omdat die performance vs. interpretability trade-off best belangrijk gaat zijjn denken we\nzie typst\n\nblijkt dus een proposal te zijn, dus deze sowieso excluden",
       "pdf": "pdfs/10.1145_3716554.3716597.pdf"
     }
   },
@@ -644,6 +644,58 @@
       "include": false,
       "notes": "Scholar: \"uncertainty llms\"\n\nMeta, dus heleboel papers kunnen eruit snowballen, waarvan ik er wrsnlk al een paar heb maar ik denk deze lezen voordat ik die anderen doe",
       "pdf": "pdfs/10.1145_3744238.pdf"
+    }
+  },
+  "10.1145/3290605.3300509": {
+    "bib": {
+      "series": "CHI '19",
+      "location": "Glasgow, Scotland Uk",
+      "keywords": "trust, machine learning, human-subject experiments",
+      "numpages": "12",
+      "pages": "1–12",
+      "booktitle": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+      "abstract": "We address a relatively under-explored aspect of human-computer interaction: people's abilities to understand the relationship between a machine learning model's stated performance on held-out data and its expected performance post deployment. We conduct large-scale, randomized human-subject experiments to examine whether laypeople's trust in a model, measured in terms of both the frequency with which they revise their predictions to match those of the model and their self-reported levels of trust in the model, varies depending on the model's stated accuracy on held-out data and on its observed accuracy in practice. We find that people's trust in a model is affected by both its stated accuracy and its observed accuracy, and that the effect of stated accuracy can change depending on the observed accuracy. Our work relates to recent research on interpretable machine learning, but moves beyond the typical focus on model internals, exploring a different component of the machine learning pipeline.",
+      "doi": "10.1145/3290605.3300509",
+      "url": "https://doi.org/10.1145/3290605.3300509",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9781450359702",
+      "year": "2019",
+      "title": "Understanding the Effect of Accuracy on Trust in Machine Learning Models",
+      "author": "Yin, Ming and Wortman Vaughan, Jennifer and Wallach, Hanna",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/3290605.3300509"
+    },
+    "user": {
+      "include": false,
+      "notes": "via  AI Transparency in the Age of LLMs: A human centered research roadmap\nzie typst summary voor waar precies\nTypst: \", simple accuracy could be a high factor to human trust aswell (Rechkemmer & Yin):\"\n\nPR2 nadat ik meer op accuracy wilde spitzen omdat we daar iets kunnen op technisch vlak\nflink veel cites ook",
+      "pdf": "pdfs/10.1145_3290605.3300509.pdf"
+    }
+  },
+  "10.1145/3491102.3501967": {
+    "bib": {
+      "series": "CHI '22",
+      "location": "New Orleans, LA, USA",
+      "keywords": "Machine learning, accuracy, confidence, human-subject experiments, trust",
+      "numpages": "14",
+      "articleno": "535",
+      "booktitle": "Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems",
+      "abstract": "Previous research shows that laypeople’s trust in a machine learning model can be affected by both performance measurements of the model on the aggregate level and performance estimates on individual predictions. However, it is unclear how people would trust the model when multiple performance indicators are presented at the same time. We conduct an exploratory human-subject experiment to answer this question. We find that while the level of model confidence significantly affects people’s belief in model accuracy, both the model’s stated and observed accuracy generally have a larger impact on people’s willingness to follow the model’s predictions as well as their self-reported levels of trust in the model, especially after observing the model’s performance in practice. We hope the empirical evidence reported in this work could open doors to further studies to advance understanding of how people perceive, process, and react to performance-related information of machine learning.",
+      "doi": "10.1145/3491102.3501967",
+      "url": "https://doi.org/10.1145/3491102.3501967",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9781450391573",
+      "year": "2022",
+      "title": "When Confidence Meets Accuracy: Exploring the Effects of Multiple Performance Indicators on Trust in Machine Learning Models",
+      "author": "Rechkemmer, Amy and Yin, Ming",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/3491102.3501967"
+    },
+    "user": {
+      "include": false,
+      "notes": "via  AI Transparency in the Age of LLMs: A human centered research roadmap\nzie typst summary voor waar precies\nTypst: \", simple accuracy could be a high factor to human trust aswell (Rechkemmer & Yin):\"\n\nPR2 nadat ik meer op accuracy wilde spitzen omdat we daar iets kunnen op technisch vlak\nflink veel cites ook",
+      "pdf": "pdfs/10.1145_3491102.3501967.pdf"
     }
   }
 }
