@@ -22,11 +22,14 @@ from PySide6.QtCore import QSize
 from PySide6.QtGui import QPixmap
 from PySide6.QtPdf import QPdfDocument
 from PySide6.QtGui import QImage, QPainter
+import copy
+from bibtexparser.bibdatabase import BibDatabase
+from PySide6.QtWidgets import QComboBox
 
+USER_DEFAULTS = {"include": False, "notes": "", "pdf": "", "referenced_in": []}
 DEFAULT_DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH = Path.home() / "litlist" / "library.json"
 DB_PATH.parent.mkdir(exist_ok=True)
-USER_DEFAULTS = {"include": False, "notes": "", "pdf": ""}  # add your own fields here
 SKIP = {"ID", "ENTRYTYPE"}
 PDF_W, PDF_H = 360, 525
 
@@ -65,6 +68,11 @@ class Main(QMainWindow):
         row.addWidget(btn)
         row.addWidget(btn_clip)
         lv.addLayout(row)
+        self.search = QLineEdit()
+        self.search.setPlaceholderText("Search title, author, notes…")
+        self.search.setClearButtonEnabled(True)
+        self.search.textChanged.connect(self.apply_filter)
+        lv.addWidget(self.search)
         lv.addWidget(self.list)
         self.amount = QLabel()
         self.amount.setAlignment(Qt.AlignRight)
@@ -107,6 +115,15 @@ class Main(QMainWindow):
         rv.addLayout(top, 2)
         rv.addWidget(self.include)
         rv.addWidget(self.notes, 1)
+        self.ref_combo = QComboBox()
+
+        self.ref_combo.activated.connect(self.add_reference)
+        self.ref_list = QListWidget()
+        self.ref_list.setMaximumHeight(90)
+        self.ref_list.itemDoubleClicked.connect(self.remove_reference)
+        rv.addWidget(QLabel("Referenced in (double-click to remove)"))
+        rv.addWidget(self.ref_combo)
+        rv.addWidget(self.ref_list)
         self.right.setEnabled(False)
 
         split = QSplitter()
@@ -115,6 +132,15 @@ class Main(QMainWindow):
         split.setSizes([450, 650])
         self.setCentralWidget(split)
         self.populate()
+
+        file_menu = self.menuBar().addMenu("File")
+
+        act_export = QAction("Export all to .bib…", self)
+        act_export.triggered.connect(self.export_bib)
+        file_menu.addAction(act_export)
+        act_json = QAction("Open library.json", self)
+        act_json.triggered.connect(lambda: self.open_path(self.db_path))
+        file_menu.addAction(act_json)
 
         menu = self.menuBar().addMenu("Settings")
         act_loc = QAction("Library location…", self)
@@ -127,9 +153,8 @@ class Main(QMainWindow):
                         ) if self.db_path.exists() else {}
         for e in db.values():
             for k, v in USER_DEFAULTS.items():
-                e["user"].setdefault(k, v)
+                e["user"].setdefault(k, copy.deepcopy(v))
         return db
-
 
     def save(self):
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -144,9 +169,11 @@ class Main(QMainWindow):
             item = QListWidgetItem(label(e["bib"]))
             item.setData(Qt.UserRole, key)
             item.setFlags(item.flags() | Qt.ItemIsUserCheckable)
-            item.setCheckState(Qt.Checked if e["user"]["include"] else Qt.Unchecked)
+            item.setCheckState(
+                Qt.Checked if e["user"]["include"] else Qt.Unchecked)
             self.list.addItem(item)
         self.list.blockSignals(False)
+        self.apply_filter()
 
     def import_bib(self):
         path, _ = QFileDialog.getOpenFileName(
@@ -155,7 +182,7 @@ class Main(QMainWindow):
             return
         with open(path, encoding="utf-8") as fh:
             self.import_bib_text(fh.read())
-        
+
     def import_clipboard(self):
         self.import_bib_text(QApplication.clipboard().text())
 
@@ -169,7 +196,8 @@ class Main(QMainWindow):
             if key in self.db:
                 self.db[key]["bib"].update(entry)  # keep user fields
             else:
-                self.db[key] = {"bib": entry, "user": dict(USER_DEFAULTS)}
+                self.db[key] = {"bib": entry,
+                                "user": copy.deepcopy(USER_DEFAULTS)}
         self.save()
         self.populate()
         self.select_key(entries[0]["ID"])
@@ -183,7 +211,7 @@ class Main(QMainWindow):
                 self.list.scrollToItem(item)
                 return
         self.show_entry(None)
-        
+
     def update_title(self):
         self.setWindowTitle(f"Literature — {self.db_path}")
 
@@ -208,8 +236,8 @@ class Main(QMainWindow):
         self.show_entry(None)
         self.update_title()
 
-
     # ---- detail view ----
+
     def show_entry(self, item, _prev=None):
         self.loading = True
         while self.form.rowCount():
@@ -218,14 +246,17 @@ class Main(QMainWindow):
         self.right.setEnabled(item is not None)
         if item:
             e = self.db[self.key]
-            self.form.addRow("ID", QLabel(self.key))
+            key_edit = QLineEdit(self.key)
+            key_edit.editingFinished.connect(lambda: self.rename_key(key_edit))
+            self.form.addRow("ID", key_edit)
             self.form.addRow("Type", QLabel(e["bib"].get("ENTRYTYPE", "")))
             for field, value in e["bib"].items():
                 if field in SKIP:
                     continue
                 edit = QLineEdit(value)
                 edit.setCursorPosition(0)
-                edit.textEdited.connect(lambda t, f=field: self.on_field_edited(f, t))
+                edit.textEdited.connect(
+                    lambda t, f=field: self.on_field_edited(f, t))
                 self.form.addRow(field, edit)
             self.include.setChecked(e["user"]["include"])
             self.notes.setPlainText(e["user"]["notes"])
@@ -235,6 +266,7 @@ class Main(QMainWindow):
             self.notes.clear()
             self.pdf_label.setText("(no PDF)")
 
+        self.refresh_refs()
         self.loading = False
 
     # ---- edit handlers ----
@@ -270,7 +302,7 @@ class Main(QMainWindow):
             return
         self.db[self.key]["user"]["notes"] = self.notes.toPlainText()
         self.save()
-        
+
     def pdf_dir(self):
         d = self.db_path.parent / "pdfs"
         d.mkdir(parents=True, exist_ok=True)
@@ -297,17 +329,8 @@ class Main(QMainWindow):
         if not path.exists():
             QMessageBox.warning(self, "Open PDF", f"File not found:\n{path}")
             return
-        if getattr(sys, "frozen", False) and sys.platform.startswith("linux"):
-            env = dict(os.environ)
-            # PyInstaller saves the original here
-            orig = env.pop("LD_LIBRARY_PATH_ORIG", None)
-            if orig is not None:
-                env["LD_LIBRARY_PATH"] = orig
-            else:
-                env.pop("LD_LIBRARY_PATH", None)
-            subprocess.Popen(["xdg-open", str(path)], env=env)
-        else:
-            QDesktopServices.openUrl(QUrl.fromLocalFile(str(path)))
+
+        self.open_path(path)
 
     def resolve_pdf(self, stored):
         p = Path(stored)
@@ -349,6 +372,84 @@ class Main(QMainWindow):
             if e.get("user", {}).get("include", False)
         )
         self.amount.setText(f"{total} entries ({included} included)")
+
+    def apply_filter(self):
+        terms = self.search.text().lower().split()
+        for i in range(self.list.count()):
+            item = self.list.item(i)
+            e = self.db[item.data(Qt.UserRole)]
+            hay = " ".join([e["bib"].get("title", ""), e["bib"].get("author", ""),
+                            e["user"]["notes"]]).lower()
+            item.setHidden(not all(t in hay for t in terms))
+
+    def refresh_refs(self):
+        refs = self.db[self.key]["user"]["referenced_in"] if self.key else []
+        self.ref_list.clear()
+        for k in refs:
+            if k in self.db:
+                it = QListWidgetItem(label(self.db[k]["bib"]))
+                it.setData(Qt.UserRole, k)
+                self.ref_list.addItem(it)
+        self.ref_combo.clear()
+        self.ref_combo.addItem("Add paper…", None)
+        for k, e in sorted(self.db.items()):
+            if k != self.key and k not in refs:
+                self.ref_combo.addItem(label(e["bib"]), k)
+
+    def add_reference(self, idx):
+        k = self.ref_combo.itemData(idx)
+        if k is None or not self.key:
+            return
+        self.db[self.key]["user"]["referenced_in"].append(k)
+        self.save()
+        self.refresh_refs()
+
+    def remove_reference(self, item):
+        self.db[self.key]["user"]["referenced_in"].remove(
+            item.data(Qt.UserRole))
+        self.save()
+        self.refresh_refs()
+
+    def export_bib(self):
+        path, _ = QFileDialog.getSaveFileName(
+            self, "Export BibTeX", str(self.db_path.with_suffix(".bib")),
+            "BibTeX (*.bib)")
+        if not path:
+            return
+        bdb = BibDatabase()
+        bdb.entries = [dict(e["bib"]) for _, e in sorted(self.db.items())]
+        Path(path).write_text(bibtexparser.dumps(bdb), "utf-8")
+
+    def open_path(self, path):
+        if getattr(sys, "frozen", False) and sys.platform.startswith("linux"):
+            env = dict(os.environ)
+            orig = env.pop("LD_LIBRARY_PATH_ORIG", None)
+            if orig is not None:
+                env["LD_LIBRARY_PATH"] = orig
+            else:
+                env.pop("LD_LIBRARY_PATH", None)
+            subprocess.Popen(["xdg-open", str(path)], env=env)
+        else:
+            QDesktopServices.openUrl(QUrl.fromLocalFile(str(path)))
+
+    def rename_key(self, edit):
+        old, new = self.key, edit.text().strip()
+        if self.loading or not old or new == old:
+            return
+        if not new or new in self.db or any(c in new for c in ' ,{}"#%\\'):
+            edit.setText(old)
+            QMessageBox.warning(
+                self, "Rename", "Key is empty, invalid, or already in use.")
+            return
+        self.db = {(new if k == old else k): v for k, v in self.db.items()}
+        self.db[new]["bib"]["ID"] = new
+        for e in self.db.values():
+            e["user"]["referenced_in"] = [new if r == old else r
+                                          for r in e["user"]["referenced_in"]]
+        self.key = new
+        self.list.currentItem().setData(Qt.UserRole, new)
+        self.save()
+        self.refresh_refs()
 
 
 if __name__ == "__main__":

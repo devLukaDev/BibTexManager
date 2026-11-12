@@ -22,7 +22,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/10.1145_3706598.3713787.pdf",
-      "notes": "via Martijn\n\nkwam ook omhoog via scholar -> \"trust llm\"\n\nabstract peak: \"Our work reveals complex trust dynamics at the junctions of the chains, with interactions between diverse technical artifacts, individuals, or organizations\""
+      "notes": "via Martijn\n\nkwam ook omhoog via scholar -> \"trust llm\"\n\nabstract peak: \"Our work reveals complex trust dynamics at the junctions of the chains, with interactions between diverse technical artifacts, individuals, or organizations\"",
+      "referenced_in": []
     }
   },
   "brown2024enhancingtrustllmsalgorithms": {
@@ -40,7 +41,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/brown2024enhancingtrustllmsalgorithms.pdf",
-      "notes": "via Martijn\nook gevonden op google scholar na query \"llm trust output\"\n\nabstract peak: \"This paper surveys evaluation techniques to enhance the trustworthiness and understanding of Large Language Models (LLMs)\""
+      "notes": "via Martijn\nook gevonden op google scholar na query \"llm trust output\"\n\nabstract peak: \"This paper surveys evaluation techniques to enhance the trustworthiness and understanding of Large Language Models (LLMs)\"",
+      "referenced_in": []
     }
   },
   "zhang2025systematic": {
@@ -59,7 +61,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/zhang2025systematic.pdf",
-      "notes": "via Martijn, op scholar: \"large language models summarization\"\n\nabstract peak: \"his survey thus provides a comprehensive review of the research progress and evolution in text summarization through the lens of these paradigm shifts\""
+      "notes": "via Martijn, op scholar: \"large language models summarization\"\n\nabstract peak: \"his survey thus provides a comprehensive review of the research progress and evolution in text summarization through the lens of these paradigm shifts\"",
+      "referenced_in": []
     }
   },
   "7ad874814fa24e1a96c089839baf6d23": {
@@ -79,7 +82,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/7ad874814fa24e1a96c089839baf6d23.pdf",
-      "notes": "Gaat meer over PV's in nederlandse politie.\nNiet handig voor deze SLR.\nvan M. Malsch, idk meer waarvandaan, denk via via papers\nWouter -> ...? -> M. Malsch"
+      "notes": "Gaat meer over PV's in nederlandse politie.\nNiet handig voor deze SLR.\nvan M. Malsch, idk meer waarvandaan, denk via via papers\nWouter -> ...? -> M. Malsch",
+      "referenced_in": []
     }
   },
   "ding2025citations": {
@@ -98,7 +102,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/ding2025citations.pdf",
-      "notes": "via Scholar na query \"llm trust output\"\nabstract peak: \"We explored trust through an anti-monitoring framework, where trust is predicted to be correlated with presence of citations and inversely related to checking citations.\""
+      "notes": "via Scholar na query \"llm trust output\"\nabstract peak: \"We explored trust through an anti-monitoring framework, where trust is predicted to be correlated with presence of citations and inversely related to checking citations.\"",
+      "referenced_in": []
     }
   },
   "schroeder2025trustllmjudgmentsreliability": {
@@ -116,7 +121,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/schroeder2025trustllmjudgmentsreliability.pdf",
-      "notes": "Niet direct useful, maar LLM-as-a-judge is misschien wel handig als deel van de pipeline, of als evaluatie van een systeem\nvia google scholar"
+      "notes": "Niet direct useful, maar LLM-as-a-judge is misschien wel handig als deel van de pipeline, of als evaluatie van een systeem\nvia google scholar",
+      "referenced_in": []
     }
   },
   "goh2026realtimetrustworthinessscoringllm": {
@@ -134,7 +140,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/goh2026realtimetrustworthinessscoringllm.pdf",
-      "notes": "Sounds too good to be true uit de abstract \n\nvia scholar 'trustworthiness llm output'\n\nabstract peak: \"We present CONSTRUCT, a real-time uncertainty estimator that scores the trustworthiness of LLM Structured Outputs. Lower-scoring outputs are more likely to contain errors, enabling automatic prioritization of limited human review bandwidth.\"\n-> mogelijk een techniek om prio te geven aan bepaalde zinnen\nstructured output komt sowieso op een manier terug"
+      "notes": "Sounds too good to be true uit de abstract \n\nvia scholar 'trustworthiness llm output'\n\nabstract peak: \"We present CONSTRUCT, a real-time uncertainty estimator that scores the trustworthiness of LLM Structured Outputs. Lower-scoring outputs are more likely to contain errors, enabling automatic prioritization of limited human review bandwidth.\"\n-> mogelijk een techniek om prio te geven aan bepaalde zinnen\nstructured output komt sowieso op een manier terug",
+      "referenced_in": []
     }
   },
   "10.1007/978-3-032-08333-3_6": {
@@ -155,7 +162,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/10.1007_978-3-032-08333-3_6.pdf",
-      "notes": "Might be irrelevant, as it talks more about explaining WITH llms than it does explaining them itself. But could be used for epxlaining the LLM output itself. Vooral dat democratizing is vaag,niet echt handig voor mij - gaat over iedereen een expl geven die ze snappen, no matter de voorkennis.\ngevonden via scholar -> \"llm explainability\"\npeak abstract: \"In this work, we introduce a domain-, model-, explanation-agnostic, generalizable and reproducible framework that ensures both transparency and human-centered explanations tailored to the needs of both experts and non-experts\"\n"
+      "notes": "Might be irrelevant, as it talks more about explaining WITH llms than it does explaining them itself. But could be used for epxlaining the LLM output itself. Vooral dat democratizing is vaag,niet echt handig voor mij - gaat over iedereen een expl geven die ze snappen, no matter de voorkennis.\ngevonden via scholar -> \"llm explainability\"\npeak abstract: \"In this work, we introduce a domain-, model-, explanation-agnostic, generalizable and reproducible framework that ensures both transparency and human-centered explanations tailored to the needs of both experts and non-experts\"\n",
+      "referenced_in": []
     }
   },
   "Liao2024AI": {
@@ -176,7 +184,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/Liao2024AI.pdf",
-      "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \"\n\nGeprint, want beetje general + monography, voor snowball effect op meer specialized papers\nzie typst\n"
+      "notes": "na zoeken op google scholar gevonden -> \"llm transparancy\"\npeak sbstract: \"It is paramount to pursue new\napproaches to provide transparency—a central pillar of responsible artificial intelligence (AI)—for LLMs, and\nyears of research at the intersection of AI and human–computer interaction (HCI) highlight that we must do so\nwith a human-centered perspective: \"\n\nGeprint, want beetje general + monography, voor snowball effect op meer specialized papers\nzie typst\n",
+      "referenced_in": []
     }
   },
   "Biro2025AI": {
@@ -198,7 +207,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/Biro2025AI.pdf",
-      "notes": "In andere sector, maar wel handig als justification van waarom je technicische guardrails enzo wil hebben, aangezien mensen gewoon lui worden. deze study gaf aan dat zoveel procent van de mensen op een gegeven moment opgeven met checken en gewoon ok doen:\nabstract peak: \"Each error was insufficiently addressed by 13–15 participants, and 35–45% of erroneous drafts were submitted entirely unedited.\"\nVanuit Wout Boeve lecture\n"
+      "notes": "In andere sector, maar wel handig als justification van waarom je technicische guardrails enzo wil hebben, aangezien mensen gewoon lui worden. deze study gaf aan dat zoveel procent van de mensen op een gegeven moment opgeven met checken en gewoon ok doen:\nabstract peak: \"Each error was insufficiently addressed by 13–15 participants, and 35–45% of erroneous drafts were submitted entirely unedited.\"\nVanuit Wout Boeve lecture\n",
+      "referenced_in": []
     }
   },
   "sharma2024suggestthathumantrust": {
@@ -216,7 +226,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/sharma2024suggestthathumantrust.pdf",
-      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\n\ntransparency en accuracy leken mij erg belangrijk, deze gaat in op explanations van modellen ne of dat trust fostert; vandaar geprint als een van eersten\nGEPRINT EN GELEZEN\nzie typst"
+      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\n\ntransparency en accuracy leken mij erg belangrijk, deze gaat in op explanations van modellen ne of dat trust fostert; vandaar geprint als een van eersten\nGEPRINT EN GELEZEN\nzie typst",
+      "referenced_in": []
     }
   },
   "cambria2024xaimeetsllmssurvey": {
@@ -234,7 +245,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/cambria2024xaimeetsllmssurvey.pdf",
-      "notes": "via Scholar -> \"llm explainability\"\nabstract text: \"enhancing performance through XAI and the emerging focus on model interpretability\""
+      "notes": "via Scholar -> \"llm explainability\"\nabstract text: \"enhancing performance through XAI and the emerging focus on model interpretability\"",
+      "referenced_in": []
     }
   },
   "benk2025trust": {
@@ -252,7 +264,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/benk2025trust.pdf",
-      "notes": "\"trust ai summary\"\n\n\". Our analysis reveals several “elephants in the room” pertaining to missing perspectives in global discussions on trust in AI\""
+      "notes": "\"trust ai summary\"\n\n\". Our analysis reveals several “elephants in the room” pertaining to missing perspectives in global discussions on trust in AI\"",
+      "referenced_in": []
     }
   },
   "cakar2026ai": {
@@ -273,7 +286,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/cakar2026ai.pdf",
-      "notes": "\"trust llm summary\"\n\n\"Our results propose a model of situational trust calibration, where trust stems from verifiability and user control rather than affective social cues. This work redefines trust in LLM-based systems as a design issue and offers practical guidance for the responsible adoption of AI in higher education.\"\n\n"
+      "notes": "\"trust llm summary\"\n\n\"Our results propose a model of situational trust calibration, where trust stems from verifiability and user control rather than affective social cues. This work redefines trust in LLM-based systems as a design issue and offers practical guidance for the responsible adoption of AI in higher education.\"\n\n",
+      "referenced_in": []
     }
   },
   "bhatnagar2026reexaminingzeroshotsummarizationempirical": {
@@ -291,7 +305,8 @@
     "user": {
       "include": false,
       "pdf": "pdfs/bhatnagar2026reexaminingzeroshotsummarizationempirical.pdf",
-      "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary\n\nGeprint want zero-shot is in principe wat er in vorige papers van wouter en casper ook gedaan is, maar deze paper is echt ziek nieuw\nSamebvatting in TYPST\n"
+      "notes": "\"the stability index of the LLM-summarizer, which is the proxy for its trustworthiness.\"\n\nscholar: trustworthiness llm summary\n\nGeprint want zero-shot is in principe wat er in vorige papers van wouter en casper ook gedaan is, maar deze paper is echt ziek nieuw\nSamebvatting in TYPST\n",
+      "referenced_in": []
     }
   },
   "10.1145/3772318.3793386": {
@@ -317,7 +332,8 @@
     "user": {
       "include": false,
       "notes": "scholar query: \"llm output trust\"\n\nabstract peak: \"how actual and perceived LLM involvement affects judgments of quality and trustworthiness,\"\n\nAls een van eerste geprint want letterlijk mijn RQ, plus veel related work -> monography voor snowvballing\nTypst, zie daar ook alle interessant sneeuwballen papers",
-      "pdf": "pdfs/10.1145_3772318.3793386.pdf"
+      "pdf": "pdfs/10.1145_3772318.3793386.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3716554.3716597": {
@@ -343,7 +359,8 @@
     "user": {
       "include": false,
       "notes": "\"Some guidelines that developers should follow include the following: performance vs. interpretability trade-offs, full documentation, and user-centered design principles.\"\n\nMisschien iets te veel gefocust op EU act, dus dan wordt t legalese, maar idk\n\nSchoilar q: \"llm output transparancy\"\n\nAls een van eerste geprint omdat die performance vs. interpretability trade-off best belangrijk gaat zijjn denken we\nzie typst\n\nblijkt dus een proposal te zijn, dus deze sowieso excluden",
-      "pdf": "pdfs/10.1145_3716554.3716597.pdf"
+      "pdf": "pdfs/10.1145_3716554.3716597.pdf",
+      "referenced_in": []
     }
   },
   "Song2026Accountability": {
@@ -362,7 +379,8 @@
     "user": {
       "include": false,
       "notes": "Mischien iets te veel medical idk, vrij kort tho dus kan geen kwaad\n\nscholar q: \"llm output transparency\"\n\nabstract peak: \"This\nmisalignment between content reliability and user expectation is\ncommonly described as trust miscalibration\"\n\n\"Thus, for users, espe‑\ncially those who are nonexperts, transparency, despite its intuitive\nappeal, falls short as a trust-calibration mechanism precisely\"",
-      "pdf": "pdfs/Song2026Accountability.pdf"
+      "pdf": "pdfs/Song2026Accountability.pdf",
+      "referenced_in": []
     }
   },
   "Ogbuokiri2026": {
@@ -385,7 +403,8 @@
     "user": {
       "include": false,
       "notes": "deel van een heel boek, heb het belangrijkstye eruit geknipt\n\n\"It highlights the importance of addressing these challenges to ensure that LLMs align with human-centered values and contribute positively to the society\"\n\"robustness, explainability, and human-in-the-loop approaches.\"\n\nscholar q: \"llm output trustworthiness\"",
-      "pdf": "pdfs/Ogbuokiri2026.pdf"
+      "pdf": "pdfs/Ogbuokiri2026.pdf",
+      "referenced_in": []
     }
   },
   "shubham2025trust": {
@@ -401,7 +420,8 @@
     "user": {
       "include": false,
       "notes": "Alleen relevant als er een model gaat worden gefinetuned\n\nscholar q: \"llm output trustworthiness\"\n\npeak: \"In this work, we\npropose a two-stage, compute-efficient repair of the post-SFT models that enhances\ntrustworthiness while preserving downstream performance.\"",
-      "pdf": "pdfs/shubham2025trust.pdf"
+      "pdf": "pdfs/shubham2025trust.pdf",
+      "referenced_in": []
     }
   },
   "edge2025localglobalgraphrag": {
@@ -419,7 +439,8 @@
     "user": {
       "include": false,
       "notes": "graph RAG\n\nnog niet voor binnen trust\n",
-      "pdf": ""
+      "pdf": "",
+      "referenced_in": []
     }
   },
   "ye2022unreliabilityexplanationsfewshotprompting": {
@@ -437,7 +458,8 @@
     "user": {
       "include": false,
       "notes": "via 'Why would you suggest that?'\n\nabstrack peak: \n\"We further show that explanations generated by the LLMs may not entail the models' predictions nor be factually grounded in the input, even on simple tasks with extractive explanations. However, these flawed explanations can still be useful as a way to verify LLMs' predictions post-hoc.\"",
-      "pdf": "pdfs/ye2022unreliabilityexplanationsfewshotprompting.pdf"
+      "pdf": "pdfs/ye2022unreliabilityexplanationsfewshotprompting.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3491101.3503704": {
@@ -463,7 +485,8 @@
     "user": {
       "include": false,
       "notes": "snowball vanuit Vera Liao Roadmap\n",
-      "pdf": ""
+      "pdf": "",
+      "referenced_in": []
     }
   },
   "10.3389/frai.2023.1225093": {
@@ -483,7 +506,8 @@
     "user": {
       "include": false,
       "notes": "snowball via Vera Roadmap\n\ndie had het over \"For example, prior research explored techniques that directly\noutput rationales together with the model prediction\", dat zou dus deze paper zijn\n\n",
-      "pdf": "pdfs/10.3389_frai.2023.1225093.pdf"
+      "pdf": "pdfs/10.3389_frai.2023.1225093.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3630106.3658941": {
@@ -509,7 +533,8 @@
     "user": {
       "include": false,
       "notes": "Ik was naar papers aan het kijken over uncertainty, nadat VeraLiao roadmap het daar ook over had en wat papers referenceerde, maar die waren allemaal vrij oud. \nUncertainty communiceren was sowieso een goed idee, aldus VeraLiao en And In AI We Trust\nDus scholar - > \"communicating uncertainty llm\"\ndeze kwam omhoog met kneiter veel refs\n\nGaat wel over search engines, maar is wel generalizable vind ik.",
-      "pdf": "pdfs/10.1145_3630106.3658941.pdf"
+      "pdf": "pdfs/10.1145_3630106.3658941.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3476068": {
@@ -536,7 +561,8 @@
     "user": {
       "include": false,
       "notes": "Snowballed -> vanuit “I’m Not Sure, But...”: Examining the Impact of Large Language Models’ Uncertainty Expression on User Reliance and Trust\nDeze paper gaat over definities van Trust, omdat dat er veel zijn (was ik ook al achter gekomen)\nSowieso handig om G1 te volgen, die state: definitieer Trust in je paper, altijd!",
-      "pdf": "pdfs/10.1145_3476068.pdf"
+      "pdf": "pdfs/10.1145_3476068.pdf",
+      "referenced_in": []
     }
   },
   "ICLR2024_6733cf15": {
@@ -555,7 +581,8 @@
     "user": {
       "include": false,
       "notes": "Meer implementation-wise, welke approaches zijn er om uncertainty te berekenen op een query\nSnowball-esque, zocht op ''communicating uncertainty llm' op scholar\n",
-      "pdf": "pdfs/ICLR2024_6733cf15.pdf"
+      "pdf": "pdfs/ICLR2024_6733cf15.pdf",
+      "referenced_in": []
     }
   },
   "wang2026agenttracestrustsurvey": {
@@ -573,7 +600,8 @@
     "user": {
       "include": false,
       "notes": "Voor implementation: source tracability, verification, trust functions, the whole shebang\n\nHelemaal crazy wel, heel technisch maar volgens mij komt het allemaal neer op hoe je elke stap van een LLM (en in dit geval voornamelijk een agent die ook kan toolcallen, retrieven en sjit) logged, en daar vervolgens ook dingen op kan loslaten om te verfieieren ofzo>!?\n\nscholar: \"source traceability llm\"",
-      "pdf": "pdfs/wang2026agenttracestrustsurvey.pdf"
+      "pdf": "pdfs/wang2026agenttracestrustsurvey.pdf",
+      "referenced_in": []
     }
   },
   "pmlr-v235-huang24x": {
@@ -597,7 +625,8 @@
     "user": {
       "include": false,
       "notes": "TrustLLM, snowball vanaf LLM or Human? Perceptions of Trust and Information Quality in Research Summaries (hij is daar [22])\nSurvey over Trust in LLMS, echt mega paper\n\nwonder dat ik deze nog niet gevonden had?!!?!\nwordt veel gereft, voornamelijk de 6 dimensions of trust for LLMs\n",
-      "pdf": "pdfs/pmlr-v235-huang24x.pdf"
+      "pdf": "pdfs/pmlr-v235-huang24x.pdf",
+      "referenced_in": []
     }
   },
   "kuhn2023semanticuncertaintylinguisticinvariances": {
@@ -615,7 +644,8 @@
     "user": {
       "include": false,
       "notes": "Gesnowballed ergens uit \n\n",
-      "pdf": "pdfs/kuhn2023semanticuncertaintylinguisticinvariances.pdf"
+      "pdf": "pdfs/kuhn2023semanticuncertaintylinguisticinvariances.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3744238": {
@@ -643,7 +673,8 @@
     "user": {
       "include": false,
       "notes": "Scholar: \"uncertainty llms\"\n\nMeta, dus heleboel papers kunnen eruit snowballen, waarvan ik er wrsnlk al een paar heb maar ik denk deze lezen voordat ik die anderen doe",
-      "pdf": "pdfs/10.1145_3744238.pdf"
+      "pdf": "pdfs/10.1145_3744238.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3290605.3300509": {
@@ -669,7 +700,8 @@
     "user": {
       "include": false,
       "notes": "via  AI Transparency in the Age of LLMs: A human centered research roadmap\nzie typst summary voor waar precies\nTypst: \", simple accuracy could be a high factor to human trust aswell (Rechkemmer & Yin):\"\n\nPR2 nadat ik meer op accuracy wilde spitzen omdat we daar iets kunnen op technisch vlak\nflink veel cites ook",
-      "pdf": "pdfs/10.1145_3290605.3300509.pdf"
+      "pdf": "pdfs/10.1145_3290605.3300509.pdf",
+      "referenced_in": []
     }
   },
   "10.1145/3491102.3501967": {
@@ -695,7 +727,130 @@
     "user": {
       "include": false,
       "notes": "via  AI Transparency in the Age of LLMs: A human centered research roadmap\nzie typst summary voor waar precies\nTypst: \", simple accuracy could be a high factor to human trust aswell (Rechkemmer & Yin):\"\n\nPR2 nadat ik meer op accuracy wilde spitzen omdat we daar iets kunnen op technisch vlak\nflink veel cites ook",
-      "pdf": "pdfs/10.1145_3491102.3501967.pdf"
+      "pdf": "pdfs/10.1145_3491102.3501967.pdf",
+      "referenced_in": []
+    }
+  },
+  "10.1145/2930238.2930290": {
+    "bib": {
+      "series": "UMAP '16",
+      "location": "Halifax, Nova Scotia, Canada",
+      "keywords": "reliance, system accuracy, trust formation, user-system trust",
+      "numpages": "5",
+      "pages": "223–227",
+      "booktitle": "Proceedings of the 2016 Conference on User Modeling Adaptation and Personalization",
+      "abstract": "Trust plays an important role in various user-facing systems and applications. It is particularly important in the context of decision support systems, where the system's output serves as one of the inputs for the users' decision making processes. In this work, we study the dynamics of explicit and implicit user trust in a simulated automated quality monitoring system, as a function of the system accuracy. We establish that users correctly perceive the accuracy of the system and adjust their trust accordingly.",
+      "doi": "10.1145/2930238.2930290",
+      "url": "https://doi.org/10.1145/2930238.2930290",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9781450343688",
+      "year": "2016",
+      "title": "Trust and Reliance Based on System Accuracy",
+      "author": "Yu, Kun and Berkovsky, Shlomo and Conway, Dan and Taib, Ronnie and Zhou, Jianlong and Chen, Fang",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/2930238.2930290"
+    },
+    "user": {
+      "include": false,
+      "notes": "snowball vanuit Yin, Understanding the Effect of Accuracy on Trust in Machine Learning Models\n\nrelationship between trust and accuracy in ML systems\nenkel handig voor conclusie",
+      "pdf": "pdfs/10.1145_2930238.2930290.pdf",
+      "referenced_in": []
+    }
+  },
+  "10.1145/3025171.3025219": {
+    "bib": {
+      "series": "IUI '17",
+      "location": "Limassol, Cyprus",
+      "keywords": "trust dynamics, temporal examination, system performance, reliance, acquisition and extinction",
+      "numpages": "11",
+      "pages": "307–317",
+      "booktitle": "Proceedings of the 22nd International Conference on Intelligent User Interfaces",
+      "abstract": "Trust is a key factor affecting the way people rely on automated systems. On the other hand, system performance has comprehensive implications on a user's trust variations. This paper examines systems of varied levels of accuracy, in order to reveal the relationship between system performance, a user's trust and reliance on the system. In particular, it is identified that system failures have a stronger effect on trust than system successes. We also describe how patterns of trust change according to a number of consecutive system failures or successes. Importantly, we show that increasing user familiarity with the system decreases the rate of trust change, which provides new insights on the development of user trust. Finally, our analysis established a correlation between a user's reliance on a system and their trust level. Combining all these findings can have important implications in general system design and implementation, by predicting how trust builds and when it stabilizes, as well as allowing for indirectly reading a user's trust in real time based on system reliance.",
+      "doi": "10.1145/3025171.3025219",
+      "url": "https://doi.org/10.1145/3025171.3025219",
+      "address": "New York, NY, USA",
+      "publisher": "Association for Computing Machinery",
+      "isbn": "9781450343480",
+      "year": "2017",
+      "title": "User Trust Dynamics: An Investigation Driven by Differences in System Performance",
+      "author": "Yu, Kun and Berkovsky, Shlomo and Taib, Ronnie and Conway, Dan and Zhou, Jianlong and Chen, Fang",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "10.1145/3025171.3025219"
+    },
+    "user": {
+      "include": false,
+      "notes": "Snwoball uit Yin\n\ngebruikt voor aangeven accuracy in ML models",
+      "pdf": "pdfs/10.1145_3025171.3025219.pdf",
+      "referenced_in": []
+    }
+  },
+  "doi:10.1518/hfes.46.1.50\\_30392": {
+    "bib": {
+      "abstract": " Automation is often problematic because people fail to rely upon it appropriately. Because people respond to technology socially, trust influences reliance on automation. In particular, trust guides reliance when complexity and unanticipated situations make a complete understanding of the automation impractical. This review considers trust from the organizational, sociological, interpersonal, psychological, and neurological perspectives. It considers how the context, automation characteristics, and cognitive processes affect the appropriateness of trust. The context in which the automation is used influences automation performance and provides a goal-oriented perspective to assess automation characteristics along a dimension of attributional abstraction. These characteristics can influence trust through analytic, analogical, and affective processes. The challenges of extrapolating the concept of trust in people to trust in automation are discussed. A conceptual model integrates research regarding trust in automation and describes the dynamics of trust, the role of context, and the influence of display characteristics. Actual or potential applications of this research include improved designs of systems that require people to manage imperfect automation. ",
+      "eprint": " \n\n\nhttps://journals.sagepub.com/doi/pdf/10.1518/hfes.46.1.50_30392\n\n",
+      "url": " \n\n\nhttps://journals.sagepub.com/doi/abs/10.1518/hfes.46.1.50_30392\n\n",
+      "note": "PMID: 15151155",
+      "doi": "10.1518/hfes.46.1.50\\_30392",
+      "year": "2004",
+      "pages": "50-80",
+      "number": "1",
+      "volume": "46",
+      "journal": "Human Factors",
+      "title": "Trust in Automation: Designing for Appropriate Reliance",
+      "author": "John D. Lee and Katrina A. See",
+      "ENTRYTYPE": "article",
+      "ID": "doi:10.1518/hfes.46.1.50\\_30392"
+    },
+    "user": {
+      "include": false,
+      "notes": "snowball Vanuit Vereshak, originele definitie van trust die we gebruiken:\n\n*“An attitude that an agent will achieve an individual’s goal in a situation characterized by uncertainty and vulnerability”*\n\n2004",
+      "pdf": "pdfs/doi:10.1518_hfes.46.1.50\\_30392.pdf",
+      "referenced_in": []
+    }
+  },
+  "Zhang_2020": {
+    "bib": {
+      "collection": "FAT* ’20",
+      "pages": "295–305",
+      "month": "January",
+      "year": "2020",
+      "author": "Zhang, Yunfeng and Liao, Q. Vera and Bellamy, Rachel K. E.",
+      "publisher": "ACM",
+      "booktitle": "Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency",
+      "doi": "10.1145/3351095.3372852",
+      "url": "http://dx.doi.org/10.1145/3351095.3372852",
+      "title": "Effect of confidence and explanation on accuracy and trust calibration in AI-assisted decision making",
+      "series": "FAT* ’20",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "Zhang_2020"
+    },
+    "user": {
+      "include": false,
+      "notes": "Vanuit Rechkemmer\n\nAbstract peak: \"A key to their success is\nto appropriately calibrate human trust in the AI on a case-by-case\nbasis; knowing when to trust or distrust the AI allows the human\nexpert to appropriately apply their knowledge, improving decision\noutcomes in cases where the model is likely to perform poorly\"\n\nzoveelste paper van Vera Liao",
+      "pdf": "pdfs/Zhang_2020.pdf",
+      "referenced_in": [
+        "10.1145/3491102.3501967"
+      ]
+    }
+  },
+  "hou2022systematicliteraturereviewtrust": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2203.05678",
+      "primaryclass": "cs.SE",
+      "archiveprefix": "arXiv",
+      "eprint": "2203.05678",
+      "year": "2022",
+      "author": "Fang Hou and Slinger Jansen",
+      "title": "A Systematic Literature Review on Trust in the Software Ecosystem",
+      "ENTRYTYPE": "misc",
+      "ID": "hou2022systematicliteraturereviewtrust"
+    },
+    "user": {
+      "include": false,
+      "notes": "via Martijn\n\n",
+      "pdf": "pdfs/hou2022systematicliteraturereviewtrust.pdf",
+      "referenced_in": []
     }
   }
 }
