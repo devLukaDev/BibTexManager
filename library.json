@@ -1,5 +1,5 @@
 {
-  "10.1145/3706598.3713787": {
+  "balayn2025": {
     "bib": {
       "series": "CHI '25",
       "location": "",
@@ -17,7 +17,7 @@
       "title": "Unpacking Trust Dynamics in the LLM Supply Chain: An Empirical Exploration to Foster Trustworthy LLM Production \\& Use",
       "author": "Balayn, Agathe and Yurrita, Mireia and Rancourt, Fanny and Casati, Fabio and Gadiraju, Ujwal",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3706598.3713787"
+      "ID": "balayn2025"
     },
     "user": {
       "include": false,
@@ -65,7 +65,7 @@
       "referenced_in": []
     }
   },
-  "7ad874814fa24e1a96c089839baf6d23": {
+  "politiekijkenluisterenlezen": {
     "bib": {
       "address": "Netherlands",
       "publisher": "Politie en Wetenschap",
@@ -77,7 +77,7 @@
       "author": "M. Malsch and Robin Kranendonk and \\{de Keijser\\}, Jan and Henk Elffers and Martha Komter and \\{de Boer\\}, Meike",
       "title": "Kijken, luisteren, lezen: De invloed van beeld, geluid en schrift op het oordeel over verdachtenverhoren",
       "ENTRYTYPE": "book",
-      "ID": "7ad874814fa24e1a96c089839baf6d23"
+      "ID": "politiekijkenluisterenlezen"
     },
     "user": {
       "include": false,
@@ -144,7 +144,7 @@
       "referenced_in": []
     }
   },
-  "10.1007/978-3-032-08333-3_6": {
+  "paraschou": {
     "bib": {
       "isbn": "978-3-032-08333-3",
       "abstract": "Artificial Intelligence (AI) is rapidly embedded in critical decision-making systems, however their foundational ``black-box'' models require eXplainable AI (XAI) solutions to enhance transparency, which are mostly oriented to experts, making no sense to non-experts. Alarming evidence about AI's unprecedented human values risks brings forward the imperative need for transparent human-centered XAI solutions. In this work, we introduce a domain-, model-, explanation-agnostic, generalizable and reproducible framework that ensures both transparency and human-centered explanations tailored to the needs of both experts and non-experts. The framework leverages Large Language Models (LLMs) and employs in-context learning to convey domain- and explainability-relevant contextual knowledge into LLMs. Through its structured prompt and system setting, our framework encapsulates in one response explanations understandable by non-experts and technical information to experts, all grounded in domain and explainability principles. To demonstrate the effectiveness of our framework, we establish a ground-truth contextual ``thesaurus'' through a rigorous benchmarking with over 40 data, model, and XAI combinations for an explainable clustering analysis of a well-being scenario. Through a comprehensive quality and human-friendliness evaluation of our framework's explanations, we prove high content quality through strong correlations with ground-truth explanations (Spearman rank correlation = 0.92) and improved interpretability and human-friendliness to non-experts through a user study (N = 56). Our overall evaluation confirms trust in LLMs as HCXAI enablers, as our framework bridges the above Gaps by delivering (i) high-quality technical explanations aligned with foundational XAI methods and (ii) clear, efficient, and interpretable human-centered explanations for non-experts.",
@@ -157,7 +157,7 @@
       "editor": "Guidotti, Riccardo\nand Schmid, Ute\nand Longo, Luca",
       "author": "Paraschou",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1007/978-3-032-08333-3_6"
+      "ID": "paraschou"
     },
     "user": {
       "include": false,
@@ -309,7 +309,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3772318.3793386": {
+  "akpinar2026": {
     "bib": {
       "series": "CHI '26",
       "location": "Barcelona, Spain",
@@ -327,7 +327,7 @@
       "title": "LLM or Human? Perceptions of Trust and Quality in Research Summaries",
       "author": "Akpinar, Nil-Jana and Avula, Sandeep and Lee, Chia-Jung and Dang, Brandon and Razat, Kaza and Murdock, Vanessa",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3772318.3793386"
+      "ID": "akpinar2026"
     },
     "user": {
       "include": false,
@@ -336,7 +336,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3716554.3716597": {
+  "kalodanis2025": {
     "bib": {
       "series": "PCI '24",
       "location": "Athens, Greece",
@@ -354,7 +354,7 @@
       "title": "Enhancing Transparency in Large Language Models to Meet EU AI Act Requirements",
       "author": "Kalodanis, Konstantinos and Rizomiliotis, Panagiotis and Feretzakis, Georgios and Kalles, Dimitrios and Verykios, Vassilios and Anagnostopoulos, Dimosthenis",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3716554.3716597"
+      "ID": "kalodanis2025"
     },
     "user": {
       "include": false,
@@ -462,7 +462,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3491101.3503704": {
+  "bansal2022": {
     "bib": {
       "series": "CHI EA '22",
       "location": "New Orleans, LA, USA",
@@ -480,7 +480,7 @@
       "title": "Workshop on Trust and Reliance in AI-Human Teams (TRAIT)",
       "author": "Bansal, Gagan and Smith-Renner, Alison Marie and Bu{\\c c}inca, Zana and Wu, Tongshuang and Holstein, Kenneth and Hullman, Jessica and Stumpf, Simone",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3491101.3503704"
+      "ID": "bansal2022"
     },
     "user": {
       "include": false,
@@ -489,7 +489,7 @@
       "referenced_in": []
     }
   },
-  "10.3389/frai.2023.1225093": {
+  "gurrapu2023": {
     "bib": {
       "abstract": "Recent advances in deep learning have improved the performance of many Natural Language Processing (NLP) tasks such as translation, question-answering, and text classification. However, this improvement comes at the expense of model explainability. Black-box models make it difficult to understand the internals of a system and the process it takes to arrive at an output. Numerical (LIME, Shapley) and visualization (saliency heatmap) explainability techniques are helpful; however, they are insufficient because they require specialized knowledge. These factors led rationalization to emerge as a more accessible explainable technique in NLP. Rationalization justifies a model's output by providing a natural language explanation (rationale). Recent improvements in natural language generation have made rationalization an attractive technique because it is intuitive, human-comprehensible, and accessible to non-technical users. Since rationalization is a relatively new field, it is disorganized. As the first survey, rationalization literature in NLP from 2007-2022 is analyzed. This survey presents available methods, explainable evaluations, code, and datasets used across various NLP tasks that use rationalization. Further, a new subfield in Explainable AI (XAI), namely, Rational AI (RAI), is introduced to advance the current state of rationalization. A discussion on observed insights, challenges, and future directions is provided to point to promising research opportunities.",
       "issn": "2624-8212",
@@ -501,7 +501,7 @@
       "title": "Rationalization for explainable NLP: a survey",
       "author": "Gurrapu, Sai  and Kulkarni, Ajay  and Huang, Lifu  and Lourentzou, Ismini  and Batarseh, Feras A. ",
       "ENTRYTYPE": "article",
-      "ID": "10.3389/frai.2023.1225093"
+      "ID": "gurrapu2023"
     },
     "user": {
       "include": false,
@@ -510,7 +510,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3630106.3658941": {
+  "kim2024": {
     "bib": {
       "series": "FAccT '24",
       "location": "Rio de Janeiro, Brazil",
@@ -528,7 +528,7 @@
       "title": "\"I'm Not Sure, But...\": Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust",
       "author": "Kim, Sunnie S. Y. and Liao, Q. Vera and Vorvoreanu, Mihaela and Ballard, Stephanie and Vaughan, Jennifer Wortman",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3630106.3658941"
+      "ID": "kim2024"
     },
     "user": {
       "include": false,
@@ -537,7 +537,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3476068": {
+  "vereschak2021": {
     "bib": {
       "keywords": "artificial intelligence, decision making, methodology, trust",
       "numpages": "39",
@@ -556,7 +556,7 @@
       "title": "How to Evaluate Trust in AI-Assisted Decision Making? A Survey of Empirical Methodologies",
       "author": "Vereschak, Oleksandra and Bailly, Gilles and Caramiaux, Baptiste",
       "ENTRYTYPE": "article",
-      "ID": "10.1145/3476068"
+      "ID": "vereschak2021"
     },
     "user": {
       "include": false,
@@ -565,7 +565,7 @@
       "referenced_in": []
     }
   },
-  "ICLR2024_6733cf15": {
+  "xiong2024": {
     "bib": {
       "year": "2024",
       "volume": "2024",
@@ -576,7 +576,7 @@
       "booktitle": "International Conference on Learning Representations",
       "author": "Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and LI, YIFEI and Fu, Jie and He, Junxian and Hooi, Bryan",
       "ENTRYTYPE": "inproceedings",
-      "ID": "ICLR2024_6733cf15"
+      "ID": "xiong2024"
     },
     "user": {
       "include": false,
@@ -604,7 +604,7 @@
       "referenced_in": []
     }
   },
-  "pmlr-v235-huang24x": {
+  "trustllm": {
     "bib": {
       "abstract": "Large language models (LLMs) have gained considerable attention for their excellent natural language processing capabilities. Nonetheless, these LLMs present many challenges, particularly in the realm of trustworthiness. This paper introduces TrustLLM, a comprehensive study of trustworthiness in LLMs, including principles for different dimensions of trustworthiness, established benchmark, evaluation, and analysis of trustworthiness for mainstream LLMs, and discussion of open challenges and future directions. Specifically, we first propose a set of principles for trustworthy LLMs that span eight different dimensions. Based on these principles, we further establish a benchmark across six dimensions including truthfulness, safety, fairness, robustness, privacy, and machine ethics. We then present a study evaluating 16 mainstream LLMs in TrustLLM, consisting of over 30 datasets. Our findings firstly show that in general trustworthiness and capability (i.e., functional effectiveness) are positively related. Secondly, our observations reveal that proprietary LLMs generally outperform most open-source counterparts in terms of trustworthiness, raising concerns about the potential risks of widely accessible open-source LLMs. However, a few open-source LLMs come very close to proprietary ones, suggesting that open-source models can achieve high levels of trustworthiness without additional mechanisms like <em>moderator</em>, offering valuable insights for developers in this field. Thirdly, it is important to note that some LLMs may be overly calibrated towards exhibiting trustworthiness, to the extent that they compromise their utility by mistakenly treating benign prompts as harmful and consequently not responding. Besides these observations, we’ve uncovered key insights into the multifaceted trustworthiness in LLMs. We emphasize the importance of ensuring transparency not only in the models themselves but also in the technologies that underpin trustworthiness. We advocate that the establishment of an AI alliance between industry, academia, the open-source community to foster collaboration is imperative to advance the trustworthiness of LLMs.",
       "url": "https://proceedings.mlr.press/v235/huang24x.html",
@@ -620,7 +620,7 @@
       "author": "Huang, Yue and Sun, Lichao and Wang, Haoran and Wu, Siyuan and Zhang, Qihui and Li, Yuan and Gao, Chujie and Huang, Yixin and Lyu, Wenhan and Zhang, Yixuan and Li, Xiner and Sun, Hanchi and Liu, Zhengliang and Liu, Yixin and Wang, Yijue and Zhang, Zhikun and Vidgen, Bertie and Kailkhura, Bhavya and Xiong, Caiming and Xiao, Chaowei and Li, Chunyuan and Xing, Eric P. and Huang, Furong and Liu, Hao and Ji, Heng and Wang, Hongyi and Zhang, Huan and Yao, Huaxiu and Kellis, Manolis and Zitnik, Marinka and Jiang, Meng and Bansal, Mohit and Zou, James and Pei, Jian and Liu, Jian and Gao, Jianfeng and Han, Jiawei and Zhao, Jieyu and Tang, Jiliang and Wang, Jindong and Vanschoren, Joaquin and Mitchell, John and Shu, Kai and Xu, Kaidi and Chang, Kai-Wei and He, Lifang and Huang, Lifu and Backes, Michael and Gong, Neil Zhenqiang and Yu, Philip S. and Chen, Pin-Yu and Gu, Quanquan and Xu, Ran and Ying, Rex and Ji, Shuiwang and Jana, Suman and Chen, Tianlong and Liu, Tianming and Zhou, Tianyi and Wang, William Yang and Li, Xiang and Zhang, Xiangliang and Wang, Xiao and Xie, Xing and Chen, Xun and Wang, Xuyu and Liu, Yan and Ye, Yanfang and Cao, Yinzhi and Chen, Yong and Zhao, Yue",
       "title": "Position: TrustLLM: Trustworthiness in Large Language Models",
       "ENTRYTYPE": "inproceedings",
-      "ID": "pmlr-v235-huang24x"
+      "ID": "trustllm"
     },
     "user": {
       "include": false,
@@ -648,7 +648,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3744238": {
+  "shorinwa2025": {
     "bib": {
       "keywords": "Uncertainty quantification, large language models (LLMs), confidence estimation",
       "numpages": "38",
@@ -668,7 +668,7 @@
       "title": "A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions",
       "author": "Shorinwa, Ola and Mei, Zhiting and Lidard, Justin and Ren, Allen Z. and Majumdar, Anirudha",
       "ENTRYTYPE": "article",
-      "ID": "10.1145/3744238"
+      "ID": "shorinwa2025"
     },
     "user": {
       "include": false,
@@ -677,7 +677,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3290605.3300509": {
+  "yin2019": {
     "bib": {
       "series": "CHI '19",
       "location": "Glasgow, Scotland Uk",
@@ -695,7 +695,7 @@
       "title": "Understanding the Effect of Accuracy on Trust in Machine Learning Models",
       "author": "Yin, Ming and Wortman Vaughan, Jennifer and Wallach, Hanna",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3290605.3300509"
+      "ID": "yin2019"
     },
     "user": {
       "include": false,
@@ -704,7 +704,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3491102.3501967": {
+  "rechkemmer": {
     "bib": {
       "series": "CHI '22",
       "location": "New Orleans, LA, USA",
@@ -722,7 +722,7 @@
       "title": "When Confidence Meets Accuracy: Exploring the Effects of Multiple Performance Indicators on Trust in Machine Learning Models",
       "author": "Rechkemmer, Amy and Yin, Ming",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3491102.3501967"
+      "ID": "rechkemmer"
     },
     "user": {
       "include": false,
@@ -731,7 +731,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/2930238.2930290": {
+  "yu2016": {
     "bib": {
       "series": "UMAP '16",
       "location": "Halifax, Nova Scotia, Canada",
@@ -749,7 +749,7 @@
       "title": "Trust and Reliance Based on System Accuracy",
       "author": "Yu, Kun and Berkovsky, Shlomo and Conway, Dan and Taib, Ronnie and Zhou, Jianlong and Chen, Fang",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/2930238.2930290"
+      "ID": "yu2016"
     },
     "user": {
       "include": false,
@@ -758,7 +758,7 @@
       "referenced_in": []
     }
   },
-  "10.1145/3025171.3025219": {
+  "yu2017": {
     "bib": {
       "series": "IUI '17",
       "location": "Limassol, Cyprus",
@@ -776,7 +776,7 @@
       "title": "User Trust Dynamics: An Investigation Driven by Differences in System Performance",
       "author": "Yu, Kun and Berkovsky, Shlomo and Taib, Ronnie and Conway, Dan and Zhou, Jianlong and Chen, Fang",
       "ENTRYTYPE": "inproceedings",
-      "ID": "10.1145/3025171.3025219"
+      "ID": "yu2017"
     },
     "user": {
       "include": false,
@@ -830,7 +830,7 @@
       "notes": "Vanuit Rechkemmer\n\nAbstract peak: \"A key to their success is\nto appropriately calibrate human trust in the AI on a case-by-case\nbasis; knowing when to trust or distrust the AI allows the human\nexpert to appropriately apply their knowledge, improving decision\noutcomes in cases where the model is likely to perform poorly\"\n\nzoveelste paper van Vera Liao",
       "pdf": "pdfs/Zhang_2020.pdf",
       "referenced_in": [
-        "10.1145/3491102.3501967"
+        "rechkemmer"
       ]
     }
   },
@@ -850,6 +850,24 @@
       "include": false,
       "notes": "via Martijn\n\n",
       "pdf": "pdfs/hou2022systematicliteraturereviewtrust.pdf",
+      "referenced_in": []
+    }
+  },
+  "Glikson": {
+    "bib": {
+      "journal": "The Academy of Management Annals",
+      "title": "Human trust in artificial intelligence: Review of empirical research. Academy of Management Annals (in press)",
+      "pages": "",
+      "month": "04",
+      "year": "2020",
+      "author": "Glikson, Ella and Woolley, Anita",
+      "ENTRYTYPE": "article",
+      "ID": "Glikson"
+    },
+    "user": {
+      "include": false,
+      "notes": "overview van trust in ai\nscholar -> trust ai\n\nvrij geneieriek dus\n",
+      "pdf": "pdfs/Glikson.pdf",
       "referenced_in": []
     }
   }
