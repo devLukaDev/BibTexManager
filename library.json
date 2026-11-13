@@ -226,7 +226,7 @@
     "user": {
       "include": false,
       "pdf": "pdfs/sharma2024suggestthathumantrust.pdf",
-      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\n\ntransparency en accuracy leken mij erg belangrijk, deze gaat in op explanations van modellen ne of dat trust fostert; vandaar geprint als een van eersten\nGEPRINT EN GELEZEN\nzie typst",
+      "notes": "scholar; large language models trust\nabstract peak: \"we analyze how the framing and presence of explanations affect user trust and model performance\"\n\ntransparency en accuracy leken mij erg belangrijk, deze gaat in op explanations van modellen ne of dat trust fostert; vandaar geprint als een van eersten\nGEPRINT EN GELEZEN\nzie typst",
       "referenced_in": []
     }
   },
@@ -785,7 +785,7 @@
       "referenced_in": []
     }
   },
-  "doi:10.1518/hfes.46.1.50\\_30392": {
+  "LeeSee": {
     "bib": {
       "abstract": " Automation is often problematic because people fail to rely upon it appropriately. Because people respond to technology socially, trust influences reliance on automation. In particular, trust guides reliance when complexity and unanticipated situations make a complete understanding of the automation impractical. This review considers trust from the organizational, sociological, interpersonal, psychological, and neurological perspectives. It considers how the context, automation characteristics, and cognitive processes affect the appropriateness of trust. The context in which the automation is used influences automation performance and provides a goal-oriented perspective to assess automation characteristics along a dimension of attributional abstraction. These characteristics can influence trust through analytic, analogical, and affective processes. The challenges of extrapolating the concept of trust in people to trust in automation are discussed. A conceptual model integrates research regarding trust in automation and describes the dynamics of trust, the role of context, and the influence of display characteristics. Actual or potential applications of this research include improved designs of systems that require people to manage imperfect automation. ",
       "eprint": " \n\n\nhttps://journals.sagepub.com/doi/pdf/10.1518/hfes.46.1.50_30392\n\n",
@@ -800,7 +800,7 @@
       "title": "Trust in Automation: Designing for Appropriate Reliance",
       "author": "John D. Lee and Katrina A. See",
       "ENTRYTYPE": "article",
-      "ID": "doi:10.1518/hfes.46.1.50\\_30392"
+      "ID": "LeeSee"
     },
     "user": {
       "include": false,
@@ -869,6 +869,50 @@
       "notes": "overview van trust in ai\nscholar -> trust ai\n\nvrij geneieriek dus\n",
       "pdf": "pdfs/Glikson.pdf",
       "referenced_in": []
+    }
+  },
+  "Kim_2025": {
+    "bib": {
+      "collection": "CHI ’25",
+      "pages": "1–19",
+      "month": "April",
+      "year": "2025",
+      "author": "Kim, Sunnie S. Y. and Vaughan, Jennifer Wortman and Liao, Q. Vera and Lombrozo, Tania and Russakovsky, Olga",
+      "publisher": "ACM",
+      "booktitle": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+      "doi": "10.1145/3706598.3714020",
+      "url": "http://dx.doi.org/10.1145/3706598.3714020",
+      "title": "Fostering Appropriate Reliance on Large Language Models: The Role of Explanations, Sources, and Inconsistencies",
+      "series": "CHI ’25",
+      "ENTRYTYPE": "inproceedings",
+      "ID": "Kim_2025"
+    },
+    "user": {
+      "include": false,
+      "notes": "geprint in W2\n\nweet niet meer hoe ik hier kwam eigk\n\"large language models explanations\" werkt ? zou gekund hebben of snowball erens uit",
+      "pdf": "pdfs/Kim_2025.pdf",
+      "referenced_in": []
+    }
+  },
+  "lanham2023measuringfaithfulnesschainofthoughtreasoning": {
+    "bib": {
+      "url": "https://arxiv.org/abs/2307.13702",
+      "primaryclass": "cs.AI",
+      "archiveprefix": "arXiv",
+      "eprint": "2307.13702",
+      "year": "2023",
+      "author": "Tamera Lanham and Anna Chen and Ansh Radhakrishnan and Benoit Steiner and Carson Denison and Danny Hernandez and Dustin Li and Esin Durmus and Evan Hubinger and Jackson Kernion and Kamilė Lukošiūtė and Karina Nguyen and Newton Cheng and Nicholas Joseph and Nicholas Schiefer and Oliver Rausch and Robin Larson and Sam McCandlish and Sandipan Kundu and Saurav Kadavath and Shannon Yang and Thomas Henighan and Timothy Maxwell and Timothy Telleen-Lawton and Tristan Hume and Zac Hatfield-Dodds and Jared Kaplan and Jan Brauner and Samuel R. Bowman and Ethan Perez",
+      "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+      "ENTRYTYPE": "misc",
+      "ID": "lanham2023measuringfaithfulnesschainofthoughtreasoning"
+    },
+    "user": {
+      "include": false,
+      "notes": "vanuit Why would you suggest that\nhandig voor het punt dat COT en post hoc explanations niet per se reflectief zijn en makkelijk te fucken zijn\n",
+      "pdf": "pdfs/lanham2023measuringfaithfulnesschainofthoughtreasoning.pdf",
+      "referenced_in": [
+        "sharma2024suggestthathumantrust"
+      ]
     }
   }
 }
