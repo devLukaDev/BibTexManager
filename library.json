@@ -728,7 +728,9 @@
       "include": false,
       "notes": "via  AI Transparency in the Age of LLMs: A human centered research roadmap\nzie typst summary voor waar precies\nTypst: \", simple accuracy could be a high factor to human trust aswell (Rechkemmer & Yin):\"\n\nPR2 nadat ik meer op accuracy wilde spitzen omdat we daar iets kunnen op technisch vlak\nflink veel cites ook",
       "pdf": "pdfs/10.1145_3491102.3501967.pdf",
-      "referenced_in": []
+      "referenced_in": [
+        "Liao2024AI"
+      ]
     }
   },
   "yu2016": {
@@ -913,6 +915,114 @@
       "referenced_in": [
         "sharma2024suggestthathumantrust"
       ]
+    }
+  },
+  "croxford2025evaluating": {
+    "bib": {
+      "publisher": "Nature Publishing Group UK, London",
+      "year": "2025",
+      "pages": "640",
+      "number": "1",
+      "volume": "8",
+      "journal": "npj Digital Medicine",
+      "author": "Croxford, Emma and Gao, Yanjun and First, Elliot and Pellegrino, Nicholas and Schnier, Miranda and Caskey, John and Oguss, Madeline and Wills, Graham and Chen, Guanhua and Dligach, Dmitriy and others",
+      "title": "Evaluating clinical AI summaries with large language models as judges",
+      "ENTRYTYPE": "article",
+      "ID": "croxford2025evaluating"
+    },
+    "user": {
+      "include": false,
+      "notes": "15-11\n\n\"PDSQI-9\" OR \"clinical summarization\" quality instrument LLM\n\nwat is die metric? https://verifychart.ai/blog/pdsqi-9-clinical-documentation-framework",
+      "pdf": "pdfs/croxford2025evaluating.pdf",
+      "referenced_in": []
+    }
+  },
+  "roxhage2026designing": {
+    "bib": {
+      "year": "2026",
+      "author": "Roxhage, Andr{\\'e} and Ahlstr{\\\"o}m, Jonathan",
+      "title": "Designing an AI-Enhanced Interface for Cognitive Support in High-Stakes Interrogations",
+      "ENTRYTYPE": "article",
+      "ID": "roxhage2026designing"
+    },
+    "user": {
+      "include": false,
+      "notes": "LLM \"police interview\" OR \"police interrogation\" summarization\n15-11",
+      "pdf": "pdfs/roxhage2026designing.pdf",
+      "referenced_in": []
+    }
+  },
+  "avunooribuilding": {
+    "bib": {
+      "author": "Avunoori, Sai Akash",
+      "title": "Building an Evaluation Framework for AI Transcription and Summarization",
+      "ENTRYTYPE": "article",
+      "ID": "avunooribuilding"
+    },
+    "user": {
+      "include": false,
+      "notes": "15-11\n\n\"hallucination rate\" threshold \"high-stakes\" summarization human oversight",
+      "pdf": "pdfs/avunooribuilding.pdf",
+      "referenced_in": []
+    }
+  },
+  "doi:10.1177/17488958241274296": {
+    "bib": {
+      "abstract": " This research explores the potential of large language models (LLMs) in revolutionizing report-writing practices across the criminal justice system. Drawing on insights from 23 interviews with justice professionals regarding report writing and LLM utilization, the benefits, challenges, and implications of integrating artificial intelligence (AI) technologies into the writing process are investigated. The findings highlight the obstacles to generating quality reports and the prevalence of boilerplate elements in justice system narratives, suggesting an opportunity for LLMs to streamline the writing process, provide training support, aid interoperability, and ensure consistency in standard sections. Practitioners voiced concern regarding the potential removal of human oversight, discretion, nuanced understanding, and privacy when weighing LLM adoption. Recommendations for practice and policy are offered. ",
+      "eprint": " \n\nhttps://doi.org/10.1177/17488958241274296\n\n\n",
+      "url": " \n\nhttps://doi.org/10.1177/17488958241274296\n\n\n",
+      "doi": "10.1177/17488958241274296",
+      "year": "2026",
+      "pages": "1259-1273",
+      "number": "4",
+      "volume": "26",
+      "journal": "Criminology \\& Criminal Justice",
+      "title": "Artificial intelligence-assisted criminal justice reporting: An exploratory study of benefits, concerns, and future directions",
+      "author": "Carl Dement and Melissa Inglis",
+      "ENTRYTYPE": "article",
+      "ID": "doi:10.1177/17488958241274296"
+    },
+    "user": {
+      "include": false,
+      "notes": "15-11\n\"law enforcement\" \"large language models\" report generation accuracy\n\nniet zo heel interessant, meeer overview\nmeeste wat erin staat weet ik al\nhuman oversight enzo",
+      "pdf": "pdfs/doi:10.1177_17488958241274296.pdf",
+      "referenced_in": []
+    }
+  },
+  "adams2024large": {
+    "bib": {
+      "publisher": "PubPub",
+      "year": "2024",
+      "journal": "CrimRxiv",
+      "author": "Adams, Ian T",
+      "title": "Large language models and artificial intelligence for police report writing",
+      "ENTRYTYPE": "article",
+      "ID": "adams2024large"
+    },
+    "user": {
+      "include": false,
+      "notes": "15-11\n\"law enforcement\" \"large language models\" report generation accuracy",
+      "pdf": "pdfs/adams2024large.pdf",
+      "referenced_in": []
+    }
+  },
+  "ferguson2025generative": {
+    "bib": {
+      "publisher": "HeinOnline",
+      "year": "2025",
+      "pages": "299",
+      "volume": "120",
+      "journal": "Nw. UL Rev.",
+      "author": "Ferguson, Andrew Guthrie",
+      "title": "Generative suspicion and the risks of AI-assisted police reports",
+      "ENTRYTYPE": "article",
+      "ID": "ferguson2025generative"
+    },
+    "user": {
+      "include": false,
+      "notes": "15-11\n\n\"AI-generated police reports\" accuracy accountability\n\n",
+      "pdf": "pdfs/ferguson2025generative.pdf",
+      "referenced_in": []
     }
   }
 }
