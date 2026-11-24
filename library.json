@@ -868,7 +868,7 @@
     },
     "user": {
       "include": false,
-      "notes": "overview van trust in ai\nscholar -> trust ai\n\nvrij geneieriek dus\n",
+      "notes": "overview van trust in ai\nscholar -> trust ai\n\nvrij geneieriek dus\n\n4000 cites\n\nanthropomorphization stukje kan ik gebruiken op p.1\n",
       "pdf": "pdfs/Glikson.pdf",
       "referenced_in": []
     }
@@ -1022,6 +1022,25 @@
       "include": false,
       "notes": "15-11\n\n\"AI-generated police reports\" accuracy accountability\n\n",
       "pdf": "pdfs/ferguson2025generative.pdf",
+      "referenced_in": []
+    }
+  },
+  "poursabzisangdeh2021": {
+    "bib": {
+      "url": "https://arxiv.org/abs/1802.07810",
+      "primaryclass": "cs.AI",
+      "archiveprefix": "arXiv",
+      "eprint": "1802.07810",
+      "year": "2021",
+      "author": "Forough Poursabzi-Sangdeh and Daniel G. Goldstein and Jake M. Hofman and Jennifer Wortman Vaughan and Hanna Wallach",
+      "title": "Manipulating and Measuring Model Interpretability",
+      "ENTRYTYPE": "misc",
+      "ID": "poursabzisangdeh2021"
+    },
+    "user": {
+      "include": false,
+      "notes": "uit Kim2025\t\n\"showing participants a clear model meant that they were less able to detect and correct for the\nmodel’s sizable mistakes, seemingly due to information overload\"",
+      "pdf": "pdfs/poursabzisangdeh2021manipulatingmeasuringmodelinterpretability.pdf",
       "referenced_in": []
     }
   }
